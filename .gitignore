@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Large datasets
+data/*.npy
+data/*.npz
+
+# Model checkpoints
+*.pt
+*.pth
+
+# Generated results
+results/*
+!results/README.md
