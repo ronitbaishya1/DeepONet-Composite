@@ -1,24 +1,32 @@
-# Python
-__pycache__/
-*.py[cod]
+cat >> .gitignore <<'EOF'
 
-# Virtual environment
+# Generated research data
+Data/
+data/
+results/
+exports/
+
+# Python environments/cache
 .venv/
-
-# macOS
+__pycache__/
+*.pyc
 .DS_Store
 
-# VS Code
-.vscode/
-
-# Large datasets
-data/*.npy
-data/*.npz
-
-# Model checkpoints
+# ML model/data files
 *.pt
 *.pth
+*.npy
+*.npz
 
-# Generated results
-results/*
-!results/README.md
+# Abaqus output files
+*.odb
+*.odb_f
+*.dat
+*.msg
+*.sta
+*.com
+*.prt
+*.sim
+*.lck
+*.log
+EOF
