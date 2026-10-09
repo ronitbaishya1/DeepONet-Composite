@@ -1,5 +1,3 @@
-cat >> .gitignore <<'EOF'
-
 # Generated research data
 Data/
 data/
