@@ -1,0 +1,41 @@
+{
+  "step": "65AM-B9A10-P",
+  "cases": 12,
+  "material_constants": {
+    "E1": 46500.0,
+    "E2": 12500.0,
+    "E3": 12000.0,
+    "nu12": 0.28,
+    "nu13": 0.28,
+    "nu23": 0.4,
+    "G12": 4750.0,
+    "G13": 4500.0,
+    "G23": 3500.0
+  },
+  "reference_B9A10O_O00_SH_final_error_pct": 0.12404839820956058,
+  "O00_Q100_minus_O_SH_abs_percentage_points": 0.0,
+  "O_regression_warning": false,
+  "methods": [
+    "L corotational Hencky-Cauchy",
+    "Kirchhoff interpretation divided by J"
+  ],
+  "group_by_material": {
+    "O00": {
+      "mean_cauchy_error_pct": 0.11627204655858125,
+      "mean_kirchhoff_error_pct": 0.11627204655858125
+    },
+    "O17": {
+      "mean_cauchy_error_pct": 0.05009693849481045,
+      "mean_kirchhoff_error_pct": 0.05009693849481045
+    },
+    "ISO": {
+      "mean_cauchy_error_pct": 0.03345991307593682,
+      "mean_kirchhoff_error_pct": 0.03345991307593682
+    }
+  },
+  "physical_exactness": "candidate only, cannot infer exact Abaqus constitutive law",
+  "predeclared_no_fitting": true,
+  "selection_requires_fresh_holdout": true,
+  "no_changes_to_B5_65V": true,
+  "physics_loss_ready": false
+}

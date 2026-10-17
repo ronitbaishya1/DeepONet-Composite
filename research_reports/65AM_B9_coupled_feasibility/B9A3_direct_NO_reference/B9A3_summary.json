@@ -1,0 +1,20 @@
+{
+  "step": "65AM-B9A3",
+  "saved_65V_anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "original_65V_measured_FE_plus_old_NO_RMS": 0.01952257634940044,
+  "B5_plus_measured_FE_RMS_at_saved_q_ESTIMATE": 3.505450705605196,
+  "Abaqus_NO_reference_plus_measured_FE_RMS_at_saved_q_ESTIMATE": 0.09299217414654183,
+  "B5_vs_true_NO_force_scaled_RMS_inner_modes": 4.188406281417546,
+  "old_NO_vs_true_NO_force_scaled_RMS_inner_modes": 0.10579042137016234,
+  "B5_reverse_sign_plus_FE_RMS_DIAGNOSTIC": 26.189533877039086,
+  "B5_direct_force_vs_Abaqus_better_than_old_NO": false,
+  "two_NO_side_Abaqus_jobs_confirmed": true,
+  "full_coupled_B5_solution_verified": false,
+  "live_Broyden_approved": false,
+  "comments": [
+    "No sign flip or empirical scaling was applied",
+    "True NO reaction RF gives an independent reference for the four inner interfaces at the same 65V boundary displacement",
+    "The true NO-reference + FE residual at old q is not a new converged coupled solve",
+    "FE/NO matching may still require a consistent weak-form force operator; B5 traction quadrature is approximate"
+  ]
+}

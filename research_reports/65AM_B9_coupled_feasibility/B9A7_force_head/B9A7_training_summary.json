@@ -1,0 +1,63 @@
+{
+  "step": "65AM-B9A7",
+  "phase": "independent_force_head_train",
+  "original_65V_anchor_SHA256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "B5_displacement_frozen": true,
+  "no_65V_solver_changes": true,
+  "no_B9A3_anchor_labels_used_in_training": true,
+  "original_64J_train_validation_test_split_preserved": true,
+  "trained_on": "data/hybrid_bulk_7region/{region}/g_all.npy (actual Abaqus RF PCA generalized forces)",
+  "models": [
+    {
+      "region": "inner_left",
+      "selected": "ridge_plus_nn",
+      "alpha": 1.0,
+      "ridge_validation_RMS": 0.03450867239536929,
+      "chosen_validation_RMS": 0.02420458011329174,
+      "nn_trials": [
+        {
+          "seed": 7,
+          "best_epoch": 85,
+          "validation_scaled_RMS": 0.029884425923228264
+        },
+        {
+          "seed": 23,
+          "best_epoch": 100,
+          "validation_scaled_RMS": 0.02600868232548237
+        },
+        {
+          "seed": 41,
+          "best_epoch": 162,
+          "validation_scaled_RMS": 0.02420458011329174
+        }
+      ],
+      "note": "Validation selected; test untouched during selection"
+    },
+    {
+      "region": "inner_right",
+      "selected": "ridge_plus_nn",
+      "alpha": 1.0,
+      "ridge_validation_RMS": 0.040009704755667716,
+      "chosen_validation_RMS": 0.03306027129292488,
+      "nn_trials": [
+        {
+          "seed": 7,
+          "best_epoch": 41,
+          "validation_scaled_RMS": 0.03537265583872795
+        },
+        {
+          "seed": 23,
+          "best_epoch": 51,
+          "validation_scaled_RMS": 0.03306027129292488
+        },
+        {
+          "seed": 41,
+          "best_epoch": 25,
+          "validation_scaled_RMS": 0.035855717957019806
+        }
+      ],
+      "note": "Validation selected; test untouched during selection"
+    }
+  ],
+  "note": "No live Broyden authorization. Candidate NO-reaction force head only."
+}

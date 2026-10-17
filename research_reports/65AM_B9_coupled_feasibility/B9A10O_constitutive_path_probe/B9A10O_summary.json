@@ -1,0 +1,66 @@
+{
+  "step": "65AM-B9A10-O",
+  "experiment": "Fully prescribed affine single-element C3D8 nonlinear loading path; ten new controls",
+  "cases": 10,
+  "material_constants": {
+    "E1": 46500.0,
+    "E2": 12500.0,
+    "E3": 12000.0,
+    "nu12": 0.28,
+    "nu13": 0.28,
+    "nu23": 0.4,
+    "G12": 4750.0,
+    "G13": 4500.0,
+    "G23": 3500.0
+  },
+  "isotropic_control_E_MPa": 20000.0,
+  "isotropic_nu": 0.25,
+  "predicted_total_strain_Hencky_without_observed_stress": true,
+  "stored_S_LE_Q_only_used_as_reference": true,
+  "group_metrics": {
+    "O00": {
+      "n": 6,
+      "mean_final_stress_error_pct": 0.06095282252755027,
+      "max_final_stress_error_pct": 0.12404839820956058
+    },
+    "O17": {
+      "n": 2,
+      "mean_final_stress_error_pct": 0.001022663178036099,
+      "max_final_stress_error_pct": 0.0010229243546331136
+    },
+    "ISO": {
+      "n": 2,
+      "mean_final_stress_error_pct": 0.001318481610028071,
+      "max_final_stress_error_pct": 0.00131963620122381
+    }
+  },
+  "same_final_F_pairs": [
+    {
+      "pair": "O00_SR__vs__O00_RS",
+      "reference_stress_path_difference_pct": 3.3665981575766554e-06,
+      "predicted_total_strain_path_difference_pct": 0.0,
+      "final_F_equal_by_design": true
+    },
+    {
+      "pair": "O00_HR__vs__O00_RH",
+      "reference_stress_path_difference_pct": 6.22791118145092e-05,
+      "predicted_total_strain_path_difference_pct": 0.0,
+      "final_F_equal_by_design": true
+    },
+    {
+      "pair": "O17_SR__vs__O17_RS",
+      "reference_stress_path_difference_pct": 3.250182567066167e-06,
+      "predicted_total_strain_path_difference_pct": 0.0,
+      "final_F_equal_by_design": true
+    },
+    {
+      "pair": "ISO_SR__vs__ISO_RS",
+      "reference_stress_path_difference_pct": 7.425844532057703e-06,
+      "predicted_total_strain_path_difference_pct": 0.0,
+      "final_F_equal_by_design": true
+    }
+  ],
+  "decision": "Diagnostic only: evaluate stress-frame/path dependence before any new constitutive law",
+  "B5_Broyden_65V_unchanged": true,
+  "physics_loss_ready": false
+}

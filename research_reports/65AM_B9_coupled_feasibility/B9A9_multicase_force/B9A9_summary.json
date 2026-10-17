@@ -1,0 +1,47 @@
+{
+  "step": "65AM-B9A9",
+  "stage": "independent_multicase_validation",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "plan_sha256": "05852aabdf58e5c59ca11c97acf3a070b6cf16fbc66a5ae2303507e78fa0b674",
+  "reference_sha256": "26a8040d3f8cce13bde704ecf0c868fa3a3e3dc2d3893f988ab7f53526c85726",
+  "cases_total": 24,
+  "regions": {
+    "inner_left": {
+      "cases": 12,
+      "force_error_scaled_RMS": {
+        "Original65V": 0.132232730841344,
+        "B9A7": 0.1295208024541057,
+        "B9A8": 0.132232730841344
+      },
+      "case_wins": {
+        "Original65V": 6,
+        "B9A7": 6,
+        "B9A8": 0
+      },
+      "B9A7_better_than_original": true,
+      "B9A8_better_than_original": false
+    },
+    "inner_right": {
+      "cases": 12,
+      "force_error_scaled_RMS": {
+        "Original65V": 0.18934379348176167,
+        "B9A7": 0.17312608981258473,
+        "B9A8": 0.17895630150080163
+      },
+      "case_wins": {
+        "Original65V": 0,
+        "B9A7": 7,
+        "B9A8": 5
+      },
+      "B9A7_better_than_original": true,
+      "B9A8_better_than_original": true
+    }
+  },
+  "new_case_labels_used_in_fitting": false,
+  "original_models_untouched": true,
+  "caveats": [
+    "Each Abaqus job is an independently prescribed two-interface subdomain, NOT a coupled seven-region solve",
+    "Force-head accuracy is distinct from normalized FE+NO residual cancellation",
+    "No model has been approved for live Broyden coupling or 0.02 convergence based on this test alone"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "step": "65AM-B9-A",
+  "phase": "saved-65V-interface-state offline B5 replay",
+  "verified_65V_RMS": 0.019522576349400432,
+  "B5_substituted_RMS_with_frozen_FE_forces_ESTIMATE_ONLY": 3.505450705605196,
+  "inferred_FE_force_definition": "Recovered algebraically from old verified 65V normalized residual minus current old NO force head; not separately measured from final patch ODBs",
+  "old_NO_generalized_force_definition": "65V existing neural generalized force heads",
+  "B5_force_definition": "B5 displacement => B7 orthotropic proxy stress => Piola nominal stress => C3D8R face-force/4 nodal distribution => PCA virtual-work projection",
+  "updated_interfaces": [
+    "left_inner",
+    "center_left",
+    "center_right",
+    "right_inner"
+  ],
+  "original_65V_unmodified": true,
+  "B5_model_frozen": true,
+  "no_FEM_recalculation_at_new_B5_response": true,
+  "not_a_converged_coupled_B5_solution": true,
+  "B5_replacement_approved": false,
+  "limitations": [
+    "Original NO force head and stress-derived B5 force are separately defined; interface sign/scale and work-conjugacy need independent FE validation",
+    "No new Abaqus patch solves or iterative Broyden update performed",
+    "External contact, reaction, hourglass residuals not completely assembled"
+  ],
+  "per_region": [
+    {
+      "region": "inner_left",
+      "U_norm_mm": 3.394313003188171,
+      "S_norm_MPa": 3224.6639442142887,
+      "J_min": 0.9961906485916389,
+      "interface_U_error_max_mm": 0.0,
+      "left_inner_resultant_N": [
+        -33.70941780018415,
+        1024.7517736821958,
+        0.0936837814352088
+      ],
+      "left_inner_g_norm": 154.53232098783275,
+      "center_left_resultant_N": [
+        22.593761151292302,
+        -1031.9014185539504,
+        -0.10298656767489567
+      ],
+      "center_left_g_norm": 362.2111443485537
+    },
+    {
+      "region": "inner_right",
+      "U_norm_mm": 3.3964267916507263,
+      "S_norm_MPa": 3251.368651532458,
+      "J_min": 0.9961612902953558,
+      "interface_U_error_max_mm": 0.0,
+      "center_right_resultant_N": [
+        -23.447740793885693,
+        -1027.3871670692185,
+        -0.12334739406153683
+      ],
+      "center_right_g_norm": 364.4873195193205,
+      "right_inner_resultant_N": [
+        35.71152049197636,
+        1009.2318546400314,
+        -0.10519241534222706
+      ],
+      "right_inner_g_norm": 153.75295919643997
+    }
+  ],
+  "windows_anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7"
+}

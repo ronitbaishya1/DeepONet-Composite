@@ -1,0 +1,6 @@
+{
+  "autograd_pass": true,
+  "gradient_norm_F": 33874871.845285445,
+  "torch_dtype": "float64",
+  "scope": "single-element constitutive stress, not full B5 training"
+}

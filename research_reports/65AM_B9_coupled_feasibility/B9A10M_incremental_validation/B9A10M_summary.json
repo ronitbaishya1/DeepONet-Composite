@@ -1,0 +1,56 @@
+{
+  "step": "B9A10M",
+  "case_count": 24,
+  "method": "Objective incremental log-relative-deformation research candidates",
+  "schemes": {
+    "start": "previous corotating material frame",
+    "end": "current corotating material frame"
+  },
+  "frozen_beta": 0.004381715594969032,
+  "all_stresses_from_U_and_material": true,
+  "abaqus_S_LE_Q_used_only_for_diagnostics": true,
+  "no_fitting": true,
+  "results": {
+    "inner_left": {
+      "L_total": 0.22119258213952062,
+      "start": 0.22118355406489726,
+      "end": 0.22118641206378695,
+      "K_oracle": 0.06918570974858841,
+      "start_stress_final": 0.20938037285041905,
+      "end_stress_final": 0.20938481488710584,
+      "start_improves_cases": 12,
+      "end_improves_cases": 12
+    },
+    "inner_right": {
+      "L_total": 0.21937420655740691,
+      "start": 0.21936538548495588,
+      "end": 0.2193681777022165,
+      "K_oracle": 0.06903261648625945,
+      "start_stress_final": 0.2067185980167141,
+      "end_stress_final": 0.2067229541338277,
+      "start_improves_cases": 12,
+      "end_improves_cases": 12
+    }
+  },
+  "exploratory_comparison_only": true,
+  "any_pooled_improvement_both_regions": true,
+  "physics_loss_ready": false,
+  "approved_for_B5": false,
+  "approved_for_coupling": false,
+  "limitations": [
+    "Not the exact Abaqus/Standard incremental orthotropic stress-rate algorithm.",
+    "Stored Abaqus U history is used here; NO-predicted displacement histories not validated.",
+    "Model selection using these 24 cases would require fresh holdout validation.",
+    "K beta remains mesh-specific empirical approximation."
+  ],
+  "input_sha256": {
+    "history": "0116c9e6a0101e3f5b6baab5ab0309a467eab79d466cc1dba530022e5552dc0b",
+    "h": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "plan": "05852aabdf58e5c59ca11c97acf3a070b6cf16fbc66a5ae2303507e78fa0b674",
+    "kc": "7c26a68348d6f27aaf605ea6d27ca980dc2dc44d2a6547d9ee2bfd7b1ec7c890",
+    "lc": "da46f35a27ca73bf4073d5a9c8609747908e5b3c56a5e549377644e411c4b6e0"
+  },
+  "finished_from_existing_case_and_mode_csv": true,
+  "resumed_case_csv_sha256": "6f919974f1befcae92f5229ee45ba0fb9fe4ade16179d155c2b91212ce8eb453",
+  "resumed_mode_csv_sha256": "0cb919e26a5839b32b3b4460a6a117fbb64084f96f5493426f076b58f9f75681"
+}

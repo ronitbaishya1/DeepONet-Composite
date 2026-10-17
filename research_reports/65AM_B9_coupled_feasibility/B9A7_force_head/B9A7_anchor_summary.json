@@ -1,0 +1,31 @@
+{
+  "step": "65AM-B9A7",
+  "phase": "saved-65V-anchor-DIAGNOSTIC-ONLY",
+  "metrics": {
+    "old_solver_saved_q_RMS": 0.01952257634940044,
+    "actual_NO_Abaqus_saved_q_RMS": 0.09299217414654183,
+    "new_force_head_saved_q_RMS_ESTIMATE": 0.04358143431283746,
+    "old_vs_Abaqus_true_inner_scaled_RMS": 0.10579042137016234,
+    "new_vs_Abaqus_true_inner_scaled_RMS": 0.0854757123983894
+  },
+  "regions": {
+    "inner_left": {
+      "nearest_training_normalized_feature_distance": 1.4875502760424206,
+      "possible_exact_training_case_overlap": false,
+      "branch_feature_count": 12
+    },
+    "inner_right": {
+      "nearest_training_normalized_feature_distance": 1.288759558527934,
+      "possible_exact_training_case_overlap": false,
+      "branch_feature_count": 12
+    }
+  },
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "limitations": [
+    "B9A3 anchor was NOT used to fit or select either force head",
+    "These are saved-state estimates, NOT newly converged coupled solutions",
+    "The B5 displacement model is unchanged; this is a separate learned force head",
+    "Do NOT replace the 65V interface force head without multiple-case Abaqus validation and live solver checks"
+  ],
+  "live_Broyden_approved": false
+}

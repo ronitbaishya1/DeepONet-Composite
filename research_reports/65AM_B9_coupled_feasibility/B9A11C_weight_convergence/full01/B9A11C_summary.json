@@ -1,0 +1,378 @@
+{
+  "step": "B9A11C",
+  "run_tag": "full01",
+  "preset": "full",
+  "training_type": "frozen B5 + POD adapter; not backbone fine-tuning",
+  "independent_validation": false,
+  "model_selection": "fit 35 training / 9 validation; 12 internal tune only after selection",
+  "reference_label_policy": "force_match is explicitly SUPERVISED force consistency; floor is reference-floor-aware residual",
+  "beta_frozen": 0.004381715594969032,
+  "source_sha256": {
+    "H": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "K": "7c26a68348d6f27aaf605ea6d27ca980dc2dc44d2a6547d9ee2bfd7b1ec7c890"
+  },
+  "base_checkpoint_modified": false,
+  "approved_for_coupled_use": false,
+  "results": {
+    "inner_left": {
+      "baseline_model": "standardized_grad",
+      "training_cases": [
+        72,
+        57,
+        35,
+        30,
+        44,
+        6,
+        50,
+        26,
+        58,
+        27,
+        23,
+        12,
+        59,
+        42,
+        41,
+        51,
+        28,
+        20,
+        8,
+        43,
+        19,
+        0,
+        52,
+        63,
+        66,
+        34,
+        14,
+        71,
+        64,
+        74,
+        62,
+        5,
+        47,
+        75,
+        40
+      ],
+      "validation_cases": [
+        61,
+        73,
+        48,
+        60,
+        24,
+        76,
+        38,
+        32,
+        65
+      ],
+      "internal_tune_cases": [
+        1,
+        3,
+        7,
+        9,
+        17,
+        36,
+        53,
+        54,
+        55,
+        56,
+        69,
+        70
+      ],
+      "grad_calibration": {
+        "floor": {
+          "lambda_base": 0.0003296420791641376,
+          "median_physics_over_data_gradient": 606.7186583312827
+        },
+        "force_match": {
+          "lambda_base": 0.00023466213498996743,
+          "median_physics_over_data_gradient": 852.2891859334301
+        }
+      },
+      "selected_from_validation": "supervised",
+      "validation_candidate_gates": {
+        "floor": false,
+        "force_match": false
+      },
+      "best_by_kind": {
+        "supervised": {
+          "region": "inner_left",
+          "kind": "supervised",
+          "multiplier": 0.0,
+          "seed": 27,
+          "lambda": 0.0,
+          "epoch": 22,
+          "val_score": 0.9381400269145426,
+          "val_disp_pct": 0.017994808222867805,
+          "val_force_diff_pct": 0.3907213122013021,
+          "val_equilibrium_pct": 0.40487821698275267
+        },
+        "floor": {
+          "region": "inner_left",
+          "kind": "floor",
+          "multiplier": 4.0,
+          "seed": 27,
+          "lambda": 0.0013185683166565504,
+          "epoch": 60,
+          "val_score": 0.8920322091361148,
+          "val_disp_pct": 0.01694562354250387,
+          "val_force_diff_pct": 0.3928304508803728,
+          "val_equilibrium_pct": 0.40806089780896554
+        },
+        "force_match": {
+          "region": "inner_left",
+          "kind": "force_match",
+          "multiplier": 4.0,
+          "seed": 27,
+          "lambda": 0.0009386485399598697,
+          "epoch": 60,
+          "val_score": 0.8872406924601284,
+          "val_disp_pct": 0.016960369458307575,
+          "val_force_diff_pct": 0.39062183068263717,
+          "val_equilibrium_pct": 0.40603921985058544
+        }
+      },
+      "exact_fit_validation_metrics": {
+        "supervised": {
+          "displacement_pct": 0.017325154288145798,
+          "free_residual_pct": 0.3959793287945844,
+          "additional_free_force_pct": 0.38124642087643196,
+          "reference_interface_force_difference_pct": 0.36221854571890766
+        },
+        "floor": {
+          "displacement_pct": 0.0163731631212289,
+          "free_residual_pct": 0.40135093906677627,
+          "additional_free_force_pct": 0.385490022342471,
+          "reference_interface_force_difference_pct": 0.3229452787357306
+        },
+        "force_match": {
+          "displacement_pct": 0.0163792683519878,
+          "free_residual_pct": 0.39939732489446883,
+          "additional_free_force_pct": 0.38340064126150886,
+          "reference_interface_force_difference_pct": 0.32285757480434074
+        }
+      },
+      "max_fit_validation_linearization_relative_error": {
+        "supervised": 1.1751857198810608e-06,
+        "floor": 3.4658958934819477e-06,
+        "force_match": 3.4393885748655655e-06
+      },
+      "internal_tune_evaluated": true,
+      "internal_tune_metrics_diagnostic_only": {
+        "B5_baseline": {
+          "displacement_pct": 0.02892795492698221,
+          "free_residual_pct": 1.1095460582160075,
+          "additional_free_force_pct": 1.10185530560375,
+          "reference_interface_force_difference_pct": 0.700934971457622
+        },
+        "supervised": {
+          "displacement_pct": 0.027526365488886567,
+          "free_residual_pct": 1.077376319584068,
+          "additional_free_force_pct": 1.069530509522436,
+          "reference_interface_force_difference_pct": 0.6561992814109895
+        },
+        "floor": {
+          "displacement_pct": 0.025811332914164025,
+          "free_residual_pct": 1.036248927571599,
+          "additional_free_force_pct": 1.0268555373592336,
+          "reference_interface_force_difference_pct": 0.6050474734617133
+        },
+        "force_match": {
+          "displacement_pct": 0.02583934399479952,
+          "free_residual_pct": 1.0370549786818486,
+          "additional_free_force_pct": 1.0276569406541858,
+          "reference_interface_force_difference_pct": 0.6060584940622521
+        }
+      },
+      "internal_tune_selected_winner_metrics": {
+        "displacement_pct": 0.027526365488886567,
+        "free_residual_pct": 1.077376319584068,
+        "additional_free_force_pct": 1.069530509522436,
+        "reference_interface_force_difference_pct": 0.6561992814109895
+      },
+      "screening_pass_on_fit_validation": false,
+      "approved_for_independent_generalization": false
+    },
+    "inner_right": {
+      "baseline_model": "centered_grad",
+      "training_cases": [
+        5,
+        19,
+        30,
+        76,
+        66,
+        32,
+        61,
+        0,
+        57,
+        50,
+        48,
+        43,
+        73,
+        14,
+        75,
+        58,
+        8,
+        65,
+        20,
+        62,
+        44,
+        24,
+        41,
+        28,
+        27,
+        47,
+        63,
+        26,
+        12,
+        6,
+        71,
+        51,
+        74,
+        38,
+        42
+      ],
+      "validation_cases": [
+        35,
+        34,
+        52,
+        23,
+        40,
+        72,
+        60,
+        64,
+        59
+      ],
+      "internal_tune_cases": [
+        1,
+        3,
+        7,
+        9,
+        17,
+        36,
+        53,
+        54,
+        55,
+        56,
+        69,
+        70
+      ],
+      "grad_calibration": {
+        "floor": {
+          "lambda_base": 0.0004803922725224747,
+          "median_physics_over_data_gradient": 416.32643037704815
+        },
+        "force_match": {
+          "lambda_base": 0.0003125178839674926,
+          "median_physics_over_data_gradient": 639.9633757305344
+        }
+      },
+      "selected_from_validation": "supervised",
+      "validation_candidate_gates": {
+        "floor": false,
+        "force_match": false
+      },
+      "best_by_kind": {
+        "supervised": {
+          "region": "inner_right",
+          "kind": "supervised",
+          "multiplier": 0.0,
+          "seed": 11,
+          "lambda": 0.0,
+          "epoch": 74,
+          "val_score": 0.8147255449939672,
+          "val_disp_pct": 0.03291126310861015,
+          "val_force_diff_pct": 0.6976823859335419,
+          "val_equilibrium_pct": 0.7101601652435204
+        },
+        "floor": {
+          "region": "inner_right",
+          "kind": "floor",
+          "multiplier": 4.0,
+          "seed": 27,
+          "lambda": 0.0019215690900898988,
+          "epoch": 65,
+          "val_score": 0.7895966672967667,
+          "val_disp_pct": 0.03308006480263818,
+          "val_force_diff_pct": 0.6732097328603304,
+          "val_equilibrium_pct": 0.6859725818074227
+        },
+        "force_match": {
+          "region": "inner_right",
+          "kind": "force_match",
+          "multiplier": 4.0,
+          "seed": 11,
+          "lambda": 0.0012500715358699703,
+          "epoch": 54,
+          "val_score": 0.7898880037216205,
+          "val_disp_pct": 0.03307218291386765,
+          "val_force_diff_pct": 0.6736197162479312,
+          "val_equilibrium_pct": 0.6865170357404295
+        }
+      },
+      "exact_fit_validation_metrics": {
+        "supervised": {
+          "displacement_pct": 0.028720858805567448,
+          "free_residual_pct": 0.6402504064551348,
+          "additional_free_force_pct": 0.6231392015734059,
+          "reference_interface_force_difference_pct": 0.8786694311323767
+        },
+        "floor": {
+          "displacement_pct": 0.028903137834921447,
+          "free_residual_pct": 0.6155492726439369,
+          "additional_free_force_pct": 0.5974308266071922,
+          "reference_interface_force_difference_pct": 0.8799499748942563
+        },
+        "force_match": {
+          "displacement_pct": 0.02888634929712581,
+          "free_residual_pct": 0.6155543190537479,
+          "additional_free_force_pct": 0.5970600342489094,
+          "reference_interface_force_difference_pct": 0.8793209755932846
+        }
+      },
+      "max_fit_validation_linearization_relative_error": {
+        "supervised": 3.513696048734642e-06,
+        "floor": 2.809242641069336e-06,
+        "force_match": 2.8943254032988602e-06
+      },
+      "internal_tune_evaluated": true,
+      "internal_tune_metrics_diagnostic_only": {
+        "B5_baseline": {
+          "displacement_pct": 0.0327756600711221,
+          "free_residual_pct": 1.1703786438195876,
+          "additional_free_force_pct": 1.1633471845209313,
+          "reference_interface_force_difference_pct": 0.9320740271499223
+        },
+        "supervised": {
+          "displacement_pct": 0.031643004856673956,
+          "free_residual_pct": 1.145418888569776,
+          "additional_free_force_pct": 1.1380988855800893,
+          "reference_interface_force_difference_pct": 0.9012526852108228
+        },
+        "floor": {
+          "displacement_pct": 0.032157733502112915,
+          "free_residual_pct": 1.160758661697526,
+          "additional_free_force_pct": 1.1530365258664368,
+          "reference_interface_force_difference_pct": 0.9144441197323406
+        },
+        "force_match": {
+          "displacement_pct": 0.0319714267812309,
+          "free_residual_pct": 1.1574698776066457,
+          "additional_free_force_pct": 1.1496914452725748,
+          "reference_interface_force_difference_pct": 0.9088956138411661
+        }
+      },
+      "internal_tune_selected_winner_metrics": {
+        "displacement_pct": 0.031643004856673956,
+        "free_residual_pct": 1.145418888569776,
+        "additional_free_force_pct": 1.1380988855800893,
+        "reference_interface_force_difference_pct": 0.9012526852108228
+      },
+      "screening_pass_on_fit_validation": false,
+      "approved_for_independent_generalization": false
+    }
+  },
+  "threshold_relative_gain_vs_supervised": 0.1,
+  "displacement_max_degradation": 0.05,
+  "elapsed_seconds": 115.16834712028503,
+  "internal_screening_pass": false
+}

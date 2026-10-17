@@ -1,0 +1,102 @@
+{
+  "step": "65AM-B9A5",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "reference": "Real Abaqus B9A3 U, LE and RF; measured FE B9A2 + original 65V PCA scaling; frozen B5 predictions from B9A4",
+  "strain_audit": [
+    {
+      "region": "inner_left",
+      "n_elements": 728,
+      "n_nodes": 1008,
+      "node_map_max_mm": 0.0,
+      "ip_map_max_mm": 3.5762786865234375e-07,
+      "tensor_vs_raw_pct": 46.790422979470634,
+      "engineering_vs_raw_pct": 0.007264733311349783,
+      "engineering_vs_2x_ref_pct": 49.13607779114112,
+      "LE22_FEM_U_vs_Abaqus_pct": 0.0272516051774945,
+      "best_formulation_DIAGNOSTIC_ONLY": "engineering_vs_raw_Abaqus",
+      "best_full_LE_error_pct": 0.007264733311349783,
+      "tensor_vs_raw_shear_L2_error_pct": 50.000002358168125,
+      "engineering_vs_raw_shear_L2_error_pct": 6.703815304157261e-05
+    },
+    {
+      "region": "inner_right",
+      "n_elements": 728,
+      "n_nodes": 1008,
+      "node_map_max_mm": 0.0,
+      "ip_map_max_mm": 3.5762786865234375e-07,
+      "tensor_vs_raw_pct": 46.71146263466767,
+      "engineering_vs_raw_pct": 0.00729304879732404,
+      "engineering_vs_2x_ref_pct": 49.11317533824594,
+      "LE22_FEM_U_vs_Abaqus_pct": 0.027118464497699266,
+      "best_formulation_DIAGNOSTIC_ONLY": "engineering_vs_raw_Abaqus",
+      "best_full_LE_error_pct": 0.00729304879732404,
+      "tensor_vs_raw_shear_L2_error_pct": 50.00000193520373,
+      "engineering_vs_raw_shear_L2_error_pct": 6.650516337060013e-05
+    }
+  ],
+  "force_RMS": {
+    "old_NO_RMS": 0.01952257634940044,
+    "true_Abaqus_NO_RMS": 0.09299217414654183,
+    "reference_onepoint_RMS": 0.27837090920746294,
+    "B5_onepoint_RMS": 0.2510690611972721,
+    "B5_displacement_with_Abaqus_stress_RMS": 0.2784263988251532,
+    "Abaqus_displacement_with_B5_stress_RMS": 0.2510119440527741,
+    "B5_vs_true_scaled_RMS_inner": 0.2949105589284895,
+    "reference_onepoint_vs_true_scaled_RMS_inner": 0.31633813358133606,
+    "B5_vs_reference_onepoint_scaled_RMS_inner": 0.2115435483236859,
+    "attribution_exact": true,
+    "reference_65V_saved_RMS": 0.019522576349400432,
+    "B5_force_not_a_converged_state": true,
+    "live_Broyden_approved": false
+  },
+  "top_six_B5_residual_modes": [
+    {
+      "interface": "center_right",
+      "mode": 3,
+      "B5_normalized_residual": -0.7443844703710446,
+      "squared_residual_share_pct": 33.80919754499555
+    },
+    {
+      "interface": "center_right",
+      "mode": 4,
+      "B5_normalized_residual": -0.6859579328121779,
+      "squared_residual_share_pct": 28.710134066388413
+    },
+    {
+      "interface": "center_left",
+      "mode": 4,
+      "B5_normalized_residual": -0.3994105171993727,
+      "squared_residual_share_pct": 9.733728929611235
+    },
+    {
+      "interface": "center_right",
+      "mode": 5,
+      "B5_normalized_residual": 0.3452926704281296,
+      "squared_residual_share_pct": 7.2746980857407815
+    },
+    {
+      "interface": "center_left",
+      "mode": 5,
+      "B5_normalized_residual": -0.34167512369671726,
+      "squared_residual_share_pct": 7.1230661141058125
+    },
+    {
+      "interface": "right_inner",
+      "mode": 2,
+      "B5_normalized_residual": 0.2526594955504072,
+      "squared_residual_share_pct": 3.895036252242619
+    }
+  ],
+  "limitations": [
+    "Strain conventions are compared; no constitutive updates or silent numerical correction applied",
+    "C3D8R one-point force is a diagnostic without verified hourglass/contact treatment",
+    "Old 65V interface state, NOT a re-equilibrated B5 solution",
+    "No deployment or live Broyden is authorized by this diagnostic"
+  ],
+  "source_SHA256": {
+    "anchor": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+    "fem": "81f677032b3c0809ab6f8994fb33d05d3cff212876cacfc12a47e9728e447167",
+    "no": "8e8d3e8f3a4fc3c27e39f101973e1474ea326bc61e4ffccc0fa7a28c50c0c9dd",
+    "ref": "34e9c71b5e15e3993e0e792a3108a50586acad3791172a2c381d9cd8e0d16a2c"
+  }
+}

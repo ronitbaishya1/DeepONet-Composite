@@ -1,0 +1,10 @@
+{
+  "beta": 0.004381715594969032,
+  "shear_input_name": "G12_MPa",
+  "geometry": "element_center_affine_null_orthogonal_projector",
+  "trained_on": [
+    "B9A10J_L_S05/S20",
+    "B9A10J_R_S05/S20"
+  ],
+  "physical_exactness": "unverified candidate"
+}

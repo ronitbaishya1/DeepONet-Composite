@@ -1,0 +1,90 @@
+{
+  "step": "65AM-B9A10-L",
+  "basis": "Hencky log(U) with polar rotation from displacement; fixed B9A10K hourglass proxy",
+  "candidate_not_exact_Abaqus": true,
+  "independent_24_cases": true,
+  "no_fitting_on_validation_data": true,
+  "linear_constitutive_constants": {
+    "E3_MPa": 12000,
+    "nu12": 0.28,
+    "nu13": 0.28,
+    "nu23": 0.4,
+    "G13_MPa": 4500,
+    "G23_MPa": 3500
+  },
+  "material_orientation_reference": "identity (B9A9 MAT_ORI)",
+  "methods": [
+    "Cauchy = C:logU",
+    "Kirchhoff = C:logU, sigma=tau/J"
+  ],
+  "LE_shear_conventions_both_reported_not_fitted": true,
+  "independent_regions": {
+    "inner_left": {
+      "cauchy": {
+        "pooled_force_pct": 0.22119258213952062,
+        "worst_force_pct": 0.22476011949097782,
+        "pooled_stress_pct": 0.2093943988878975
+      },
+      "kirchhoff": {
+        "pooled_force_pct": 0.35416585554759195,
+        "worst_force_pct": 0.35521345316399416,
+        "pooled_stress_pct": 0.2093943988878975
+      },
+      "oracle_K_force_pct": 0.06918570974858841,
+      "LE_tensor_pct": 46.796130255081636,
+      "LE_engineering_pct": 0.007279238475896638,
+      "oracle_hooke_direct_pct": 0.2096245634237858,
+      "oracle_hooke_doubled_pct": 29.709491874424018
+    },
+    "inner_right": {
+      "cauchy": {
+        "pooled_force_pct": 0.21937420655740691,
+        "worst_force_pct": 0.2222854816100211,
+        "pooled_stress_pct": 0.20673235304405185
+      },
+      "kirchhoff": {
+        "pooled_force_pct": 0.3540544717036821,
+        "worst_force_pct": 0.3555595892804458,
+        "pooled_stress_pct": 0.20673235304405185
+      },
+      "oracle_K_force_pct": 0.06903261648625945,
+      "LE_tensor_pct": 46.71410106698942,
+      "LE_engineering_pct": 0.0072944850768935756,
+      "oracle_hooke_direct_pct": 0.2069770189956491,
+      "oracle_hooke_doubled_pct": 29.302796640431463
+    }
+  },
+  "autograd": {
+    "step": "B9A10L",
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "free_node_equilibrium_loss_float": 0.00011603793592374615,
+    "gradient_norm_displacement": 7.149744075168326,
+    "gradient_norm_material": 1.0240465310385364e-06,
+    "autograd_pass": true,
+    "not_a_B5_training_run": true
+  },
+  "screening_gate_cauchy": true,
+  "screening_thresholds": {
+    "pooled_force_pct": 0.25,
+    "worst_force_pct": 0.5,
+    "pooled_stress_pct": 1.0,
+    "LE_comparison_pct": 2.0
+  },
+  "physics_loss_ready": false,
+  "b5_training_done": false,
+  "broyden_changed": false,
+  "limitations": [
+    "Predicted S is a total-strain corotational approximation, whereas Abaqus may integrate an objective stress rate.",
+    "Abaqus LE/S used ONLY for diagnosis; predictions use U, material and reference mesh.",
+    "No matching calibrated stress to 24 case labels; no test tuning.",
+    "K beta remains a fitted mesh-specific candidate. Passing screening does not establish exact Abaqus law."
+  ],
+  "source_hashes": {
+    "h": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "l": "48384d52ba4af969677bb404ea167f0d325aae9e66f8618a877dbe52c4d7b857",
+    "plan": "05852aabdf58e5c59ca11c97acf3a070b6cf16fbc66a5ae2303507e78fa0b674",
+    "kc": "7c26a68348d6f27aaf605ea6d27ca980dc2dc44d2a6547d9ee2bfd7b1ec7c890",
+    "k": "10910ca7ac22ece5d53ae310eba8428dc393c1d47c8ec22aa439e9b4a79309f0"
+  }
+}

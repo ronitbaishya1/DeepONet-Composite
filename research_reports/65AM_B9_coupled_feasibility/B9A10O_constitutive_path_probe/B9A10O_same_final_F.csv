@@ -1,0 +1,5 @@
+pair,reference_stress_path_difference_pct,predicted_total_strain_path_difference_pct,final_F_equal_by_design
+O00_SR__vs__O00_RS,3.3665981575766554e-06,0.0,True
+O00_HR__vs__O00_RH,6.22791118145092e-05,0.0,True
+O17_SR__vs__O17_RS,3.250182567066167e-06,0.0,True
+ISO_SR__vs__ISO_RS,7.425844532057703e-06,0.0,True

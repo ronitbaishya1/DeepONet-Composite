@@ -1,0 +1,93 @@
+{
+  "step": "B9A11B",
+  "run_tag": "trial03",
+  "type": "frozen B5 + trainable POD residual adapter (NOT backbone training)",
+  "independent_validation": false,
+  "validation_scope": "original 64J internal tune 12 cases; NOT unseen",
+  "reference_FEM_force_used_for_training_normalization_and_floor_only_not_as_traction_target": true,
+  "physical_operator": "B9A10L Cauchy + frozen K hourglass",
+  "beta_frozen": 0.004381715594969032,
+  "source_sha256": {
+    "H": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "K": "7c26a68348d6f27aaf605ea6d27ca980dc2dc44d2a6547d9ee2bfd7b1ec7c890"
+  },
+  "baseline_checkpoint_modified": false,
+  "results": {
+    "inner_left": {
+      "baseline_model": "standardized_grad",
+      "fit_count": 44,
+      "train_count": 35,
+      "val_count": 9,
+      "tune_count": 12,
+      "lambda_equilibrium": 0.0003296420791641376,
+      "median_physics_to_data_grad_ratio": 606.7186583312827,
+      "early_stopping_epoch": {
+        "supervised": 15,
+        "physics": 15
+      },
+      "means_internal_tune": {
+        "B5_baseline": {
+          "displacement_pct": 0.02892795492698221,
+          "free_residual_pct": 1.1095460582160075,
+          "additional_free_force_pct": 1.10185530560375,
+          "reference_interface_force_difference_pct": 0.700934971457622
+        },
+        "supervised": {
+          "displacement_pct": 0.028252150555739385,
+          "free_residual_pct": 1.0905795721719327,
+          "additional_free_force_pct": 1.08272941522367,
+          "reference_interface_force_difference_pct": 0.680638319993672
+        },
+        "physics": {
+          "displacement_pct": 0.02811035925388447,
+          "free_residual_pct": 1.081797928875152,
+          "additional_free_force_pct": 1.0738074492055623,
+          "reference_interface_force_difference_pct": 0.6740912758723244
+        }
+      },
+      "max_fit_val_linearization_relative_error": 3.562995204170154e-07,
+      "internal_tune_gate_pass": false,
+      "caution": "These original internal tuning cases are NOT independent validation"
+    },
+    "inner_right": {
+      "baseline_model": "centered_grad",
+      "fit_count": 44,
+      "train_count": 35,
+      "val_count": 9,
+      "tune_count": 12,
+      "lambda_equilibrium": 0.0004803922725224747,
+      "median_physics_to_data_grad_ratio": 416.32643037704815,
+      "early_stopping_epoch": {
+        "supervised": 15,
+        "physics": 15
+      },
+      "means_internal_tune": {
+        "B5_baseline": {
+          "displacement_pct": 0.0327756600711221,
+          "free_residual_pct": 1.1703786438195876,
+          "additional_free_force_pct": 1.1633471845209313,
+          "reference_interface_force_difference_pct": 0.9320740271499223
+        },
+        "supervised": {
+          "displacement_pct": 0.03290382410670795,
+          "free_residual_pct": 1.1666841454728394,
+          "additional_free_force_pct": 1.159583508546813,
+          "reference_interface_force_difference_pct": 0.9374964722109546
+        },
+        "physics": {
+          "displacement_pct": 0.03284891379070428,
+          "free_residual_pct": 1.1711225555842402,
+          "additional_free_force_pct": 1.1639629888893859,
+          "reference_interface_force_difference_pct": 0.9354925383612368
+        }
+      },
+      "max_fit_val_linearization_relative_error": 2.6990066232347094e-07,
+      "internal_tune_gate_pass": false,
+      "caution": "These original internal tuning cases are NOT independent validation"
+    }
+  },
+  "physics_adapter_internal_screening_pass": false,
+  "approved_for_coupled_training": false,
+  "approved_for_independent_generalization": false,
+  "elapsed_seconds": 11.768901109695435
+}

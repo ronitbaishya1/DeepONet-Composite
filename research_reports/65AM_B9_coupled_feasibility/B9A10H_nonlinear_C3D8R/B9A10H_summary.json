@@ -1,0 +1,90 @@
+{
+  "step": "65AM-B9A10-H",
+  "source_cases": 24,
+  "model": "C3D8R NLGEOM=YES",
+  "force_formula": "one-point reference weak force, P=det(F)*Q.T*sigma_local*Q*inv(F).T",
+  "B9A10D_baseline_reproduced": {
+    "B9A10C_L_R_FREE": 1.1770800278693918,
+    "B9A10C_L_R_REPLAY": 1.1770788954990998,
+    "B9A10C_R_R_FREE": 1.1730825918218823,
+    "B9A10C_R_R_REPLAY": 1.1730814646256724
+  },
+  "independent_aggregates": {
+    "inner_left/material": {
+      "n": 4,
+      "rms_all_pct": 1.1754992129952735,
+      "rms_interface_pct": 0.37496164018920913,
+      "rms_free_pct": 1.1140925312284997,
+      "rms_PCA_on_65V_scale": 0.11791266539092689,
+      "worst_case_pct": 1.1815965028979323
+    },
+    "inner_left/interface": {
+      "n": 4,
+      "rms_all_pct": 1.179451962921601,
+      "rms_interface_pct": 0.37616570377689795,
+      "rms_free_pct": 1.11785790516579,
+      "rms_PCA_on_65V_scale": 0.11829616537366698,
+      "worst_case_pct": 1.1894455891243798
+    },
+    "inner_left/combined": {
+      "n": 4,
+      "rms_all_pct": 1.1762408506307012,
+      "rms_interface_pct": 0.3759085801897809,
+      "rms_free_pct": 1.1145560901238387,
+      "rms_PCA_on_65V_scale": 0.1182500311265608,
+      "worst_case_pct": 1.194331032284364
+    },
+    "inner_left/all": {
+      "n": 12,
+      "rms_all_pct": 1.1770652589221722,
+      "rms_interface_pct": 0.3756789981582893,
+      "rms_free_pct": 1.1155034352723008,
+      "rms_PCA_on_65V_scale": 0.11815307763397342,
+      "worst_case_pct": 1.194331032284364
+    },
+    "inner_right/material": {
+      "n": 4,
+      "rms_all_pct": 1.1714312585035656,
+      "rms_interface_pct": 0.3733770586271446,
+      "rms_free_pct": 1.110333628010153,
+      "rms_PCA_on_65V_scale": 0.13002922592902075,
+      "worst_case_pct": 1.177554619142673
+    },
+    "inner_right/interface": {
+      "n": 4,
+      "rms_all_pct": 1.1753222581877094,
+      "rms_interface_pct": 0.374944508889738,
+      "rms_free_pct": 1.1139115879839339,
+      "rms_PCA_on_65V_scale": 0.13044792118565976,
+      "worst_case_pct": 1.1796768333486607
+    },
+    "inner_right/combined": {
+      "n": 4,
+      "rms_all_pct": 1.170835497263157,
+      "rms_interface_pct": 0.37340419062913766,
+      "rms_free_pct": 1.1096959367646897,
+      "rms_PCA_on_65V_scale": 0.1306969034671124,
+      "worst_case_pct": 1.1780283297552412
+    },
+    "inner_right/all": {
+      "n": 12,
+      "rms_all_pct": 1.1725313593023383,
+      "rms_interface_pct": 0.3739093037244131,
+      "rms_free_pct": 1.1113152663109211,
+      "rms_PCA_on_65V_scale": 0.13039164123676553,
+      "worst_case_pct": 1.1796768333486607
+    }
+  },
+  "no_stabilization_formula_inferred": true,
+  "no_ground_truth_hourglass_nodal_forces": true,
+  "energy_ALLAE_not_treated_as_force": true,
+  "physics_loss_ready": false,
+  "live_Broyden_approved": false,
+  "models_B5_B9A7_65V_unchanged": true,
+  "limitations": [
+    "Exact local Abaqus stresses come from ODB, not an NO differentiable stress constitutive prediction",
+    "Difference from Abaqus RF may include reduced-integration stabilization and other force terms",
+    "Free-node Abaqus RF=0 does not itself encode element internal forces",
+    "No fitted correction, no zeroing of force errors, no new coupled solution"
+  ]
+}

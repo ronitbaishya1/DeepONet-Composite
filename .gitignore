@@ -28,3 +28,18 @@ __pycache__/
 *.lck
 *.log
 EOF
+
+# Abaqus generated datasets and intermediate exports
+B*_exports/
+B*_transfer_*/
+B*_measured_FE/
+B*_coupled_anchor/
+B*_material_audit/
+B*_abaqus_audit/
+new_FEM_exports/
+
+# Local credentials
+.env
+.env.*
+*.pem
+*.key

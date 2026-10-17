@@ -1,0 +1,75 @@
+{
+  "step": "65AM-B9A10-K",
+  "description": "Positive semidefinite affine-free proxy, NOT exact Abaqus hourglass law",
+  "calibration_dataset": "two B9A10J full-field replay stiffness slopes ONLY",
+  "heldout_dataset": "24 B9A9 independent subdomain cases; never used to tune beta",
+  "beta_global": 0.004381715594969032,
+  "model": "E=beta*G12/2 sum_e V^(1/3)||P_affine_null u||^2",
+  "anchor": [
+    {
+      "region": "inner_left",
+      "original_stress_only_gap_pct": 1.1770788954990998,
+      "unscaled_template_norm_N": 1478.5436824864976,
+      "measured_stiffness_slope_norm_N": 6.487468888211772,
+      "template_measured_direction_cosine": 0.998763313803908,
+      "independent_numer": 9580.143838407057,
+      "independent_denom": 2186091.4210207323,
+      "beta_frozen": 0.004381715594969032,
+      "predicted_slope_relative_error_pct": 4.971782111018808,
+      "predicted_total_gap_pct": 0.0688383092892062,
+      "stress_only_gap_pct": 1.1770788954990998
+    },
+    {
+      "region": "inner_right",
+      "original_stress_only_gap_pct": 1.1730814646256726,
+      "unscaled_template_norm_N": 1480.5713829201718,
+      "measured_stiffness_slope_norm_N": 6.494598313799321,
+      "template_measured_direction_cosine": 0.9987616796557219,
+      "independent_numer": 9603.809069721314,
+      "independent_denom": 2192091.619922151,
+      "beta_frozen": 0.004381715594969032,
+      "predicted_slope_relative_error_pct": 4.9750637136658735,
+      "predicted_total_gap_pct": 0.0687260747485753,
+      "stress_only_gap_pct": 1.1730814646256726
+    }
+  ],
+  "independent": {
+    "L": {
+      "cases": 12,
+      "stress_only_pooled_total_pct": 1.1770652589221722,
+      "proxy_pooled_total_pct": 0.06918570974858841,
+      "mean_missing_force_relative_error_pct": 5.87805309174988,
+      "max_proxy_total_gap_pct": 0.07001915776093023,
+      "improved_case_count": 12
+    },
+    "R": {
+      "cases": 12,
+      "stress_only_pooled_total_pct": 1.1725313593023383,
+      "proxy_pooled_total_pct": 0.06903261648625945,
+      "mean_missing_force_relative_error_pct": 5.887647483175718,
+      "max_proxy_total_gap_pct": 0.0698432301824269,
+      "improved_case_count": 12
+    }
+  },
+  "numerical_screening_pass": true,
+  "numerical_screening_thresholds": {
+    "pooled_total_max_pct": 0.1,
+    "worst_total_max_pct": 0.15,
+    "improve_all_cases": true
+  },
+  "physics_loss_ready": false,
+  "full_coupled_65V_approved": false,
+  "limitations": [
+    "Uses Abaqus ODB local stresses for stress-only term (not differentiable).",
+    "Hourglass proxy uses scalar G12 and is not Abaqus constitutive stabilization law.",
+    "Training beta on two states does not prove other materials/geometries.",
+    "No B5 training or Broyden solver changes."
+  ],
+  "source_files_sha256": {
+    "j": "f3a1b28c570549cd3fab17ab4a9a0e250a126fe99911f7f34adaa869c998b120",
+    "h": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "plan": "05852aabdf58e5c59ca11c97acf3a070b6cf16fbc66a5ae2303507e78fa0b674",
+    "anchor": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7"
+  },
+  "torch_device_tested": "cpu"
+}

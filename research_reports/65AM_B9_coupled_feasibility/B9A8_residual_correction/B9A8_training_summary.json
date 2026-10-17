@@ -1,0 +1,88 @@
+{
+  "step": "65AM-B9A8",
+  "phase": "train_validate_test",
+  "original_force_model_folder": "/Users/ronitbaishya/Desktop/IIT Guwahati/DeepONet_Composite/exports/hybrid_force_models_7region",
+  "force_pca_folder": "/Users/ronitbaishya/Desktop/IIT Guwahati/DeepONet_Composite/data/hybrid_force_pca_7region",
+  "saved_65V_anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "B5_frozen": true,
+  "original_65V_frozen": true,
+  "training_uses_only_64J_train": true,
+  "hyperparameter_selection_only_validation": true,
+  "B9A3_true_anchor_NEVER_used_for_selection": true,
+  "note": "Held-out test figures are a diagnostic comparison. Neither checkpoint is approved for live coupling.",
+  "models": [
+    {
+      "region": "inner_left",
+      "method": "unchanged",
+      "alpha": 0.0001,
+      "ridge_blend": 0.0,
+      "nn_blend": 0.0,
+      "selected_validation_scaled_RMS": 0.04502846921726843,
+      "original_validation_scaled_RMS": 0.04502846921726843,
+      "test_old_RMS": 0.09964802824137545,
+      "test_B9A7_RMS": 0.02442871297157554,
+      "test_B9A8_RMS": 0.09964802824137545,
+      "test_improvement_vs_old_RMS": 0.0,
+      "nn_trials": [
+        {
+          "seed": 17,
+          "best_epoch": 1,
+          "raw_val": 0.04559236019849777,
+          "blended_val": 0.04502846921726843,
+          "blend": 0.0
+        },
+        {
+          "seed": 37,
+          "best_epoch": 1,
+          "raw_val": 0.04540358856320381,
+          "blended_val": 0.04502846921726843,
+          "blend": 0.0
+        }
+      ],
+      "original_anchor_replay_gap_scaled_RMS": 6.71873469385119e-16,
+      "source_hashes": {
+        "old_model": "1f586ee9bfd271186da0e2b2f53acc2ecb47760014d7d37a14a262a170d66a5d",
+        "B9A7": "1446b37613186442317a902e08040a496fed8adb32ec81c5ff857ce2ad248535",
+        "pca_left_inner": "c4b56c8c827b345f1a4d9051eb242218fba887033fb7d0805b5dcb1fcf4048e8",
+        "pca_center_left": "a3772f020080865b6922415e0162366f4c84b4f68606346729a1a1996598a808"
+      }
+    },
+    {
+      "region": "inner_right",
+      "method": "ridge",
+      "alpha": 0.0001,
+      "ridge_blend": 1.0,
+      "nn_blend": 0.0,
+      "selected_validation_scaled_RMS": 0.09567025505727973,
+      "original_validation_scaled_RMS": 0.09666586477990649,
+      "test_old_RMS": 0.07387699248951467,
+      "test_B9A7_RMS": 0.028986776630768672,
+      "test_B9A8_RMS": 0.07502784775232742,
+      "test_improvement_vs_old_RMS": -0.00115085526281275,
+      "nn_trials": [
+        {
+          "seed": 17,
+          "best_epoch": 4,
+          "raw_val": 0.09544273465871811,
+          "blended_val": 0.09544273310367049,
+          "blend": 1.0
+        },
+        {
+          "seed": 37,
+          "best_epoch": 4,
+          "raw_val": 0.09562690556049347,
+          "blended_val": 0.0956269056247403,
+          "blend": 1.0
+        }
+      ],
+      "original_anchor_replay_gap_scaled_RMS": 0.0,
+      "source_hashes": {
+        "old_model": "dbadf69aaa82c005d3388f6ab3e7a05a167ed46ca1b9ccbc76e63731c5244a1f",
+        "B9A7": "5598f97018e8bdc90943f0b3deadf5c2a8fda63badbc272fdc24a2035b9bf695",
+        "pca_center_right": "2c32cab976ce9e31a12f8fdd5ae2f95563a716f60e1ae8fbaa9d45d0b706a4e5",
+        "pca_right_inner": "2579c5bdcc7d9d5934249f652247bb94af9dca8b995b0c36b5b28d93b4f26f6d"
+      }
+    }
+  ],
+  "live_Broyden_approved": false
+}

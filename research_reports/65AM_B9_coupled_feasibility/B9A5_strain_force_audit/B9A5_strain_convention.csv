@@ -1,0 +1,3 @@
+region,n_elements,n_nodes,node_map_max_mm,ip_map_max_mm,tensor_vs_raw_pct,engineering_vs_raw_pct,engineering_vs_2x_ref_pct,LE22_FEM_U_vs_Abaqus_pct,best_formulation_DIAGNOSTIC_ONLY,best_full_LE_error_pct,tensor_vs_raw_shear_L2_error_pct,engineering_vs_raw_shear_L2_error_pct
+inner_left,728,1008,0.0,3.5762786865234375e-07,46.790422979470634,0.007264733311349783,49.13607779114112,0.0272516051774945,engineering_vs_raw_Abaqus,0.007264733311349783,50.000002358168125,6.703815304157261e-05
+inner_right,728,1008,0.0,3.5762786865234375e-07,46.71146263466767,0.00729304879732404,49.11317533824594,0.027118464497699266,engineering_vs_raw_Abaqus,0.00729304879732404,50.00000193520373,6.650516337060013e-05

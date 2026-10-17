@@ -1,0 +1,99 @@
+{
+  "step": "65AM-B9A10-A",
+  "method": "C3D8R weak-form Piola stress integral vs actual all-node Abaqus RF",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "reference_replay_control_pass": true,
+  "FEM_weak_minus_exact_replay_65V_scaled_RMS_18_modes": 0.3163514616479145,
+  "B5_Abaqus_replay_minus_FEM_replay_65V_scaled_RMS_18_modes": 0.21248408656129741,
+  "region_audit": [
+    {
+      "region": "inner_left",
+      "node_count": 1008,
+      "element_count": 728,
+      "interface_node_count": 224,
+      "free_node_count": 784,
+      "max_geometry_difference_mm": 0.0,
+      "max_reference_displacement_difference_mm": 0.0,
+      "FE_replay_to_original_Abaqus_reaction_pct": 0.00019600494285970202,
+      "FEM_replay_free_nodal_RF_norm_pct_of_boundary_RF": 0.00022064590506594802,
+      "B5_replay_free_nodal_RF_norm_pct_of_boundary_RF": 2.4691279409475078,
+      "weak_FE_free_nodal_force_norm_pct_of_boundary_RF": 3.330628551362587,
+      "weak_FE_vs_exact_replay_all_nodes_pct": 3.821256143252587,
+      "weak_FE_vs_exact_replay_boundary_nodes_pct": 1.8732199448693636,
+      "unmodelled_force_gap_norm_N": 21.07519287795487,
+      "unmodelled_force_gap_free_norm_N": 18.369223832727087,
+      "reference_volume_mm3": 153.5999984741211,
+      "min_deformation_J": 0.9961458975196366,
+      "max_deformation_J": 1.002608998238224,
+      "B5_vs_FEM_disp_pct": 0.027757960033287045
+    },
+    {
+      "region": "inner_right",
+      "node_count": 1008,
+      "element_count": 728,
+      "interface_node_count": 224,
+      "free_node_count": 784,
+      "max_geometry_difference_mm": 0.0,
+      "max_reference_displacement_difference_mm": 0.0,
+      "FE_replay_to_original_Abaqus_reaction_pct": 0.00019529850949282973,
+      "FEM_replay_free_nodal_RF_norm_pct_of_boundary_RF": 0.00022023553357940673,
+      "B5_replay_free_nodal_RF_norm_pct_of_boundary_RF": 1.7009365033471338,
+      "weak_FE_free_nodal_force_norm_pct_of_boundary_RF": 3.3396446529468076,
+      "weak_FE_vs_exact_replay_all_nodes_pct": 3.826160643166228,
+      "weak_FE_vs_exact_replay_boundary_nodes_pct": 1.8671732583757876,
+      "unmodelled_force_gap_norm_N": 21.197563385037412,
+      "unmodelled_force_gap_free_norm_N": 18.502136880020295,
+      "reference_volume_mm3": 153.5999984741211,
+      "min_deformation_J": 0.996132585899707,
+      "max_deformation_J": 1.002625501650643,
+      "B5_vs_FEM_disp_pct": 0.03299798495941482
+    }
+  ],
+  "top_modes_by_absolute_weak_gap": [
+    {
+      "interface": "center_right",
+      "mode": 4,
+      "weak_reconstruction_gap_scaled": 0.8125953695973838
+    },
+    {
+      "interface": "center_left",
+      "mode": 4,
+      "weak_reconstruction_gap_scaled": 0.5451102585751855
+    },
+    {
+      "interface": "center_right",
+      "mode": 3,
+      "weak_reconstruction_gap_scaled": 0.4841249413609859
+    },
+    {
+      "interface": "center_left",
+      "mode": 3,
+      "weak_reconstruction_gap_scaled": 0.4611742633090906
+    },
+    {
+      "interface": "center_left",
+      "mode": 5,
+      "weak_reconstruction_gap_scaled": 0.34966945427227714
+    },
+    {
+      "interface": "center_right",
+      "mode": 5,
+      "weak_reconstruction_gap_scaled": -0.3013870709008284
+    },
+    {
+      "interface": "left_inner",
+      "mode": 3,
+      "weak_reconstruction_gap_scaled": -0.23481958239730383
+    },
+    {
+      "interface": "right_inner",
+      "mode": 4,
+      "weak_reconstruction_gap_scaled": 0.19625206658344932
+    }
+  ],
+  "warning": "Difference FEM replay minus weak one-point force includes ALL missing FE/constitutive/stabilization terms, not proven solely hourglass.",
+  "physics_loss_ready": false,
+  "live_Broyden_approved": false,
+  "models_unchanged": true,
+  "no_new_Abaqus_jobs": true
+}

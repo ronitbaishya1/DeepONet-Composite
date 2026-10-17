@@ -1,0 +1,3 @@
+region,FEM_kinematic_replay_vs_original_Abaqus_scaled_RMS,FEM_kinematic_replay_vs_original_Abaqus_rel_pct,control_within_0p01_scaled_RMS
+inner_left,3.436353521981012e-05,0.00022428267252724057,True
+inner_right,3.365822875665593e-05,0.00022237888991895292,True

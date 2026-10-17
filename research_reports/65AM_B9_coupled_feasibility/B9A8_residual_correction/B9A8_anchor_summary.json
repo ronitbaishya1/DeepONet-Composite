@@ -1,0 +1,41 @@
+{
+  "step": "65AM-B9A8",
+  "status": "diagnostic_only",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "metrics": {
+    "saved_65V_old_NO_RMS": 0.01952257634940044,
+    "true_Abaqus_NO_at_saved_q_RMS": 0.09299217414654183,
+    "B9A7_force_head_RMS_ESTIMATE": 0.04358143431283746,
+    "B9A8_residual_corrected_RMS_ESTIMATE": 0.02537251528015624,
+    "old_vs_true_inner_scaled_RMS": 0.10579042137016234,
+    "B9A7_vs_true_inner_scaled_RMS": 0.0854757123983894,
+    "B9A8_vs_true_inner_scaled_RMS": 0.10344235248047032
+  },
+  "regions": {
+    "inner_left": {
+      "nearest_train_normalized_distance": 1.4875502760424206,
+      "is_exact_train_duplicate": false,
+      "source_hashes": {
+        "old_model": "1f586ee9bfd271186da0e2b2f53acc2ecb47760014d7d37a14a262a170d66a5d",
+        "B9A7": "1446b37613186442317a902e08040a496fed8adb32ec81c5ff857ce2ad248535",
+        "pca_left_inner": "c4b56c8c827b345f1a4d9051eb242218fba887033fb7d0805b5dcb1fcf4048e8",
+        "pca_center_left": "a3772f020080865b6922415e0162366f4c84b4f68606346729a1a1996598a808"
+      }
+    },
+    "inner_right": {
+      "nearest_train_normalized_distance": 1.288759558527934,
+      "is_exact_train_duplicate": false,
+      "source_hashes": {
+        "old_model": "dbadf69aaa82c005d3388f6ab3e7a05a167ed46ca1b9ccbc76e63731c5244a1f",
+        "B9A7": "5598f97018e8bdc90943f0b3deadf5c2a8fda63badbc272fdc24a2035b9bf695",
+        "pca_center_right": "2c32cab976ce9e31a12f8fdd5ae2f95563a716f60e1ae8fbaa9d45d0b706a4e5",
+        "pca_right_inner": "2579c5bdcc7d9d5934249f652247bb94af9dca8b995b0c36b5b28d93b4f26f6d"
+      }
+    }
+  },
+  "anchor_labels_never_used_in_training": true,
+  "no_new_Abaqus_FEM_solve": true,
+  "not_re_equilibrated": true,
+  "note": "Smaller saved-state residual may be cancellation, NOT proof of physical accuracy. Coupling not authorized.",
+  "live_Broyden_approved": false
+}

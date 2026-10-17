@@ -1,0 +1,40 @@
+{
+  "step": "65AM-B9A10-J",
+  "method": "Controlled C3D8R stiffness perturbations with identical full nodal U",
+  "input_export_sha256": "f3a1b28c570549cd3fab17ab4a9a0e250a126fe99911f7f34adaa869c998b120",
+  "source_B9A10C_sha256": "76cd044285cff17128f89d983209543602b7f1343b340c9f581844824a1832d7",
+  "regions": {
+    "L": {
+      "original_65V_reference_regression_pct": 0.0,
+      "default_stress_only_gap_pct": 1.1770788954990998,
+      "default_stress_only_interface_gap_pct": 0.37563145180811075,
+      "default_stress_only_free_node_gap_pct": 1.1155338357225708,
+      "hourglass_stiffness_response_pct": 1.176277744496033,
+      "direction_cosine_between_missing_force_and_HG_response": 0.9995056628301323,
+      "least_squares_scale_to_match_missing_force": 1.0001864161369887,
+      "reconstructed_zero_scale_residual_pct": 0.03700719338780035,
+      "linear_stiffness_response_max_deviation_pct": 3.532234994430849e-06,
+      "max_relative_stress_change_between_scalings": 0.0,
+      "enhanced_vs_default_reaction_pct": 300.94397053083225,
+      "paired_cases": 4
+    },
+    "R": {
+      "original_65V_reference_regression_pct": 2.0520476633864776e-14,
+      "default_stress_only_gap_pct": 1.1730814646256726,
+      "default_stress_only_interface_gap_pct": 0.37406679294459355,
+      "default_stress_only_free_node_gap_pct": 1.1118426853941434,
+      "hourglass_stiffness_response_pct": 1.172275134180433,
+      "direction_cosine_between_missing_force_and_HG_response": 0.9995008269272763,
+      "least_squares_scale_to_match_missing_force": 1.000188317366419,
+      "reconstructed_zero_scale_residual_pct": 0.037061436318282,
+      "linear_stiffness_response_max_deviation_pct": 3.671106943067301e-06,
+      "max_relative_stress_change_between_scalings": 0.0,
+      "enhanced_vs_default_reaction_pct": 300.95880948277255,
+      "paired_cases": 4
+    }
+  },
+  "statement": "A fitted linear response is a sensitivity diagnosis, not automatically Abaqus exact hourglass force.",
+  "old_models_untouched": true,
+  "physics_loss_ready": false,
+  "live_Broyden_approved": false
+}

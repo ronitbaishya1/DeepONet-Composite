@@ -1,0 +1,6 @@
+{
+  "autograd_pass": true,
+  "gradient_norm_F": 15364860.681735652,
+  "dtype": "float64",
+  "scope": "single-element constitutive prediction, not B5"
+}

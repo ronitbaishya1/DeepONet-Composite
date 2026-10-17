@@ -1,0 +1,188 @@
+{
+  "step": "65AM-B9A10-I",
+  "source": "24 B9A9 independent cases, B9A10H unchanged",
+  "method": "SVD local 8-node affine-null projections of ASSEMBLED nodal residual",
+  "not_an_hourglass_force_recovery": true,
+  "critical_caveat": "Patch-local projections of assembled forces include neighboring elements; percentages are NON-ADDITIVE and do not identify Abaqus stabilization.",
+  "group_statistics": {
+    "inner_left/material": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.937436821887312,
+      "mean_bulk_fraction": 0.9537056855059374,
+      "mean_boundary_fraction": 0.8847099722316919,
+      "mean_nodal_force_gap_pct": 1.1754900709262874,
+      "mean_displacement_nonaffinity": 0.3111685801210606
+    },
+    "inner_left/interface": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.9375695945844111,
+      "mean_bulk_fraction": 0.953861511310897,
+      "mean_boundary_fraction": 0.8847470960216699,
+      "mean_nodal_force_gap_pct": 1.1794310722321093,
+      "mean_displacement_nonaffinity": 0.31163572375323556
+    },
+    "inner_left/combined": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.9373932835356564,
+      "mean_bulk_fraction": 0.953641624324102,
+      "mean_boundary_fraction": 0.8849410991520253,
+      "mean_nodal_force_gap_pct": 1.176189472991004,
+      "mean_displacement_nonaffinity": 0.31044192280832195
+    },
+    "inner_left/all": {
+      "n": 12,
+      "mean_patch_hourglass_compatible_fraction": 0.9374665666691265,
+      "mean_bulk_fraction": 0.9537362737136453,
+      "mean_boundary_fraction": 0.8847993891351291,
+      "mean_nodal_force_gap_pct": 1.1770368720498003,
+      "mean_displacement_nonaffinity": 0.3110820755608727
+    },
+    "inner_right/material": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.9374821377396569,
+      "mean_bulk_fraction": 0.9537643798680113,
+      "mean_boundary_fraction": 0.8846201738209502,
+      "mean_nodal_force_gap_pct": 1.1714220331337422,
+      "mean_displacement_nonaffinity": 0.31214475882084436
+    },
+    "inner_right/interface": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.9374777112488294,
+      "mean_bulk_fraction": 0.9537553914034981,
+      "mean_boundary_fraction": 0.8847252874064292,
+      "mean_nodal_force_gap_pct": 1.1753180353774615,
+      "mean_displacement_nonaffinity": 0.3116940731483043
+    },
+    "inner_right/combined": {
+      "n": 4,
+      "mean_patch_hourglass_compatible_fraction": 0.9375973219557581,
+      "mean_bulk_fraction": 0.9538949387060314,
+      "mean_boundary_fraction": 0.8847433426911282,
+      "mean_nodal_force_gap_pct": 1.1708132840848309,
+      "mean_displacement_nonaffinity": 0.3121897321080522
+    },
+    "inner_right/all": {
+      "n": 12,
+      "mean_patch_hourglass_compatible_fraction": 0.937519056981415,
+      "mean_bulk_fraction": 0.9538049033258469,
+      "mean_boundary_fraction": 0.8846962679728358,
+      "mean_nodal_force_gap_pct": 1.1725177841986782,
+      "mean_displacement_nonaffinity": 0.31200952135906695
+    }
+  },
+  "largest_PCA_mode_errors": [
+    {
+      "job": "B9A9_R11",
+      "region": "inner_right",
+      "condition": "combined",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2829491433832155,
+      "abs_difference_on_65V_scale": 0.2829491433832155
+    },
+    {
+      "job": "B9A9_R09",
+      "region": "inner_right",
+      "condition": "combined",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2827538079331697,
+      "abs_difference_on_65V_scale": 0.2827538079331697
+    },
+    {
+      "job": "B9A9_R01",
+      "region": "inner_right",
+      "condition": "material",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.28240435136294717,
+      "abs_difference_on_65V_scale": 0.28240435136294717
+    },
+    {
+      "job": "B9A9_R12",
+      "region": "inner_right",
+      "condition": "combined",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2817743586265021,
+      "abs_difference_on_65V_scale": 0.2817743586265021
+    },
+    {
+      "job": "B9A9_R08",
+      "region": "inner_right",
+      "condition": "interface",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2817008045847922,
+      "abs_difference_on_65V_scale": 0.2817008045847922
+    },
+    {
+      "job": "B9A9_R07",
+      "region": "inner_right",
+      "condition": "interface",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.28147344643874705,
+      "abs_difference_on_65V_scale": 0.28147344643874705
+    },
+    {
+      "job": "B9A9_R05",
+      "region": "inner_right",
+      "condition": "interface",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.28106767615101286,
+      "abs_difference_on_65V_scale": 0.28106767615101286
+    },
+    {
+      "job": "B9A9_R06",
+      "region": "inner_right",
+      "condition": "interface",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.281030440134921,
+      "abs_difference_on_65V_scale": 0.281030440134921
+    },
+    {
+      "job": "B9A9_R10",
+      "region": "inner_right",
+      "condition": "combined",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.28031043980206494,
+      "abs_difference_on_65V_scale": 0.28031043980206494
+    },
+    {
+      "job": "B9A9_R03",
+      "region": "inner_right",
+      "condition": "material",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.28023517902371725,
+      "abs_difference_on_65V_scale": 0.28023517902371725
+    },
+    {
+      "job": "B9A9_R02",
+      "region": "inner_right",
+      "condition": "material",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2799590367469358,
+      "abs_difference_on_65V_scale": 0.2799590367469358
+    },
+    {
+      "job": "B9A9_R04",
+      "region": "inner_right",
+      "condition": "material",
+      "interface": "center_right",
+      "mode": 3,
+      "signed_difference_on_65V_scale": -0.2796428687934617,
+      "abs_difference_on_65V_scale": 0.2796428687934617
+    }
+  ],
+  "optional_Abaqus_energy_provided": false,
+  "ALLAE_not_a_nodal_force": true,
+  "physics_loss_ready": false,
+  "B5_B9A7_65V_unchanged": true,
+  "next_gate": "Only a controlled independent stabilization switch/scaling experiment or independently accessible element internal force can identify stabilization causally."
+}

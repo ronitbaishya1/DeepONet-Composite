@@ -1,0 +1,9 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "autograd_pass": true,
+  "loss_free": 0.00011603154850653123,
+  "grad_norm_history": 10.097835385525057,
+  "grad_norm_material": 1.0239493447453864e-06,
+  "not_neural_operator_training": true
+}

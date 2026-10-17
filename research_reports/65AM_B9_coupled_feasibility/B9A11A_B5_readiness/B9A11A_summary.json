@@ -1,0 +1,58 @@
+{
+  "step": "65AM-B9A11-A",
+  "diagnostic_cohort": "original 64J TRAIN 12 internal tuning cases per region",
+  "NOT_independent_generalization": true,
+  "actual_Abaqus_RF_for_tune_cases_evaluated": false,
+  "model": "frozen B9A10-L Cauchy stress plus frozen B9A10-K hourglass proxy",
+  "beta": 0.004381715594969032,
+  "b5_unchanged": true,
+  "broyden_65V_unchanged": true,
+  "no_training": true,
+  "no_ckpt_writes": true,
+  "physics_loss_approved": false,
+  "formula_reference": "f_ref is the same approximate operator on Abaqus reference displacement (not Abaqus RF)",
+  "formula_equilibrium": "||f_B5[free]||^2 / ||f_ref[interface]||^2",
+  "formula_interface": "oracle-labelled diagnostic ||f_B5[interface]-f_ref[interface]||^2 / ||f_ref[interface]||^2",
+  "units": "mm, MPa, N; force errors relative to f_ref interface N",
+  "failure_modes": [
+    "Different 64J and K mesh geometry",
+    "Different local C3D8R node ordering",
+    "Unstable gradients in coefficient space",
+    "Nonzero operator floor even at exact FE displacement",
+    "Interface oracle diagnostic cannot be used as unsupervised coupling loss"
+  ],
+  "source_sha256": {
+    "H": "b2f341cdcf6e70e69b9d19fa1fffdee05f876ffae9adb03cd944120fcecd27c2",
+    "K": "7c26a68348d6f27aaf605ea6d27ca980dc2dc44d2a6547d9ee2bfd7b1ec7c890"
+  },
+  "results": {
+    "inner_left": {
+      "standardized_grad": {
+        "cases": 12,
+        "mean_displacement_rel_pct": 0.025313035846045065,
+        "mean_oracle_free_floor_pct": 0.10547563910913167,
+        "mean_pred_free_pct": 1.1095460582160075,
+        "mean_pred_minus_oracle_free_pct": 1.10185530560375,
+        "mean_pred_minus_oracle_interface_pct": 0.700934971457622,
+        "mean_data_eq_gradient_cosine": 0.6553250999497601,
+        "fraction_conflicting_gradients": 0.0,
+        "median_grad_eq_over_data": 2373.665779346726,
+        "finite_coefficient_gradients": true
+      }
+    },
+    "inner_right": {
+      "centered_grad": {
+        "cases": 12,
+        "mean_displacement_rel_pct": 0.028670709459319335,
+        "mean_oracle_free_floor_pct": 0.10292921201777587,
+        "mean_pred_free_pct": 1.1703786438195876,
+        "mean_pred_minus_oracle_free_pct": 1.1633471845209313,
+        "mean_pred_minus_oracle_interface_pct": 0.9320740271499223,
+        "mean_data_eq_gradient_cosine": 0.4692479307483972,
+        "fraction_conflicting_gradients": 0.0,
+        "median_grad_eq_over_data": 2689.341505752768,
+        "finite_coefficient_gradients": true
+      }
+    }
+  }
+}

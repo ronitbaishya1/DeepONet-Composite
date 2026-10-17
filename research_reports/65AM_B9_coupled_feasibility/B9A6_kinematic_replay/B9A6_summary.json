@@ -1,0 +1,38 @@
+{
+  "step": "65AM-B9A6",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "method": "ABAQUS all-node kinematic replay of frozen B5 and actual FEM U on identical C3D8R geometry",
+  "RMS": {
+    "replay_FEM_saved_q_RMS": 0.09299882626640153,
+    "replay_B5_saved_q_RMS": 0.18323351810108132,
+    "true_NO_saved_q_RMS": 0.09299217414654183,
+    "B5_onepoint_saved_q_RMS": 0.2510690611972721,
+    "FEM_onepoint_saved_q_RMS": 0.27837090920746294,
+    "B5_kinematic_vs_true_scaled_RMS_inner": 0.21249452791106282,
+    "FEM_kinematic_vs_true_scaled_RMS_inner": 3.401271024072112e-05,
+    "B5_onepoint_vs_B5_kinematic_scaled_RMS_inner": 0.30576981225026706,
+    "reference_control_pass_all": true,
+    "no_live_Broyden_authorization": true
+  },
+  "reference_controls": [
+    {
+      "region": "inner_left",
+      "FEM_kinematic_replay_vs_original_Abaqus_scaled_RMS": 3.436353521981012e-05,
+      "FEM_kinematic_replay_vs_original_Abaqus_rel_pct": 0.00022428267252724057,
+      "control_within_0p01_scaled_RMS": true
+    },
+    {
+      "region": "inner_right",
+      "FEM_kinematic_replay_vs_original_Abaqus_scaled_RMS": 3.365822875665593e-05,
+      "FEM_kinematic_replay_vs_original_Abaqus_rel_pct": 0.00022237888991895292,
+      "control_within_0p01_scaled_RMS": true
+    }
+  ],
+  "limits": [
+    "Abaqus kinematic replay is an offline force oracle requiring full-field prescribed displacements",
+    "Not deployable as a NO force head without further surrogate modeling",
+    "Must match FEM replay control before interpreting B5 replay reactions",
+    "No new coupled Broyden solve; 65V remains unchanged",
+    "Exact-minus-onepoint includes all discretization/constitutive/stabilization differences; not exclusively hourglass"
+  ]
+}

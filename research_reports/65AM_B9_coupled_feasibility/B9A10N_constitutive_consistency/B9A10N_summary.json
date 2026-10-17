@@ -1,0 +1,40 @@
+{
+  "step": "65AM-B9A10-N",
+  "case_count": 24,
+  "research_design": "No parameters fitted; comparison of predeclared Hencky-Cauchy L and orthotropic Green-Strain StVK reference candidate.",
+  "nine_constants": "E1,E2,E3,nu12,nu13,nu23,G12,G13,G23; nu21,nu31,nu32 derived by elastic reciprocity",
+  "residual_identity": "S_L - S_Abaqus = C*(LE_pred - LE_Abaqus) + (C*LE_Abaqus - S_Abaqus)",
+  "abaqus_LE_S_RF_used_only_for_diagnostics": true,
+  "has_Windows_deck_crosscheck": true,
+  "group_statistics": {
+    "inner_left": {
+      "strain_prediction_error_pct": 0.007279238475896638,
+      "stress_L_total_error_pct": 0.2093943988878975,
+      "stress_strain_related_error_pct": 0.020610080746094547,
+      "stress_constitutive_related_error_pct": 0.2096245634237858,
+      "stress_SVK_error_pct": 1.6797553594532306,
+      "force_L_pct": 0.22119258213952062,
+      "force_SVK_pct": 1.9031507612878904
+    },
+    "inner_right": {
+      "strain_prediction_error_pct": 0.0072944850768935756,
+      "stress_L_total_error_pct": 0.20673235304405185,
+      "stress_strain_related_error_pct": 0.020407849096630053,
+      "stress_constitutive_related_error_pct": 0.2069770189956491,
+      "stress_SVK_error_pct": 1.6650619114426102,
+      "force_L_pct": 0.21937420655740691,
+      "force_SVK_pct": 1.8924733747142455
+    }
+  },
+  "B9A10K_beta_frozen": 0.004381715594969032,
+  "new_model_selected": false,
+  "new_holdout_needed_to_select_SVK": true,
+  "physics_loss_ready": false,
+  "B5_Broyden_65V_unchanged": true,
+  "limits": [
+    "SVK is an independent physically motivated candidate, not Abaqus Standard exact orthotropic incremental model.",
+    "Residual component norms do not add because of cross terms.",
+    "Material input agreement does not establish equivalence of finite-strain stress algorithms.",
+    "Same 24 previously inspected cases are not an unbiased fresh test for any subsequently selected constitutive alternative."
+  ]
+}

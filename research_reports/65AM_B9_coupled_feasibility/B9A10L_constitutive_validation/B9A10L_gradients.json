@@ -1,0 +1,10 @@
+{
+  "step": "B9A10L",
+  "device": "cpu",
+  "dtype": "torch.float64",
+  "free_node_equilibrium_loss_float": 0.00011603793592374615,
+  "gradient_norm_displacement": 7.149744075168326,
+  "gradient_norm_material": 1.0240465310385364e-06,
+  "autograd_pass": true,
+  "not_a_B5_training_run": true
+}

@@ -1,0 +1,115 @@
+{
+  "step": "65AM-B9A10-B",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "reference_controls_pass": true,
+  "method": "Spatial attribution of one-point force gap and B5 kinematic replay force gap",
+  "regions": [
+    {
+      "region": "inner_left",
+      "nodes": 1008,
+      "bc_nodes": 224,
+      "free_nodes": 784,
+      "reference_volume_mm3": 153.5999984741211,
+      "onepoint_vs_abaqus_all_pct": 3.821256143252587,
+      "onepoint_vs_abaqus_interface_pct": 1.8732199448693636,
+      "onepoint_free_node_force_pct_of_boundary_RF": 3.330628551362587,
+      "abaqus_free_node_force_pct_of_boundary_RF": 0.00022064590506594802,
+      "B5_replay_free_node_force_pct_of_boundary_RF": 2.4691279409475078,
+      "unmodeled_gap_all_norm_N": 21.07519287795487,
+      "unmodeled_gap_free_norm_N": 18.369223832727087,
+      "unmodeled_gap_interface_norm_N": 10.331281170608554,
+      "B5_field_gap_all_norm_N": 14.396069710612027,
+      "net_unmodeled_gap_N": [
+        1.3488947343986979e-05,
+        3.503182412600836e-06,
+        9.515584409314215e-08
+      ],
+      "total_unmodeled_gap_work_Nmm": 0.5381908687899131,
+      "min_J": 0.9961458975196366,
+      "max_J": 1.002608998238224
+    },
+    {
+      "region": "inner_right",
+      "nodes": 1008,
+      "bc_nodes": 224,
+      "free_nodes": 784,
+      "reference_volume_mm3": 153.5999984741211,
+      "onepoint_vs_abaqus_all_pct": 3.826160643166228,
+      "onepoint_vs_abaqus_interface_pct": 1.8671732583757876,
+      "onepoint_free_node_force_pct_of_boundary_RF": 3.3396446529468076,
+      "abaqus_free_node_force_pct_of_boundary_RF": 0.00022023553357940673,
+      "B5_replay_free_node_force_pct_of_boundary_RF": 1.7009365033471338,
+      "unmodeled_gap_all_norm_N": 21.197563385037412,
+      "unmodeled_gap_free_norm_N": 18.502136880020295,
+      "unmodeled_gap_interface_norm_N": 10.3444489623987,
+      "B5_field_gap_all_norm_N": 10.134693424582624,
+      "net_unmodeled_gap_N": [
+        -6.752201337612007e-06,
+        -2.5985013809570745e-06,
+        -1.1296722082776434e-07
+      ],
+      "total_unmodeled_gap_work_Nmm": 0.5404982426528688,
+      "min_J": 0.996132585899707,
+      "max_J": 1.002625501650643
+    }
+  ],
+  "top_missing_force_modes": [
+    {
+      "interface": "center_right",
+      "mode": 4,
+      "missing_weak_projection_scaled": 0.8125953695973557,
+      "B5_field_projection_scaled": 0.1434407761363988
+    },
+    {
+      "interface": "center_left",
+      "mode": 4,
+      "missing_weak_projection_scaled": 0.5451102585751889,
+      "B5_field_projection_scaled": 0.22263523532127666
+    },
+    {
+      "interface": "center_right",
+      "mode": 3,
+      "missing_weak_projection_scaled": 0.4841249413609884,
+      "B5_field_projection_scaled": -0.1245400344937171
+    },
+    {
+      "interface": "center_left",
+      "mode": 3,
+      "missing_weak_projection_scaled": 0.46117426330909944,
+      "B5_field_projection_scaled": 0.6127631072125249
+    },
+    {
+      "interface": "center_left",
+      "mode": 5,
+      "missing_weak_projection_scaled": 0.3496694542722846,
+      "B5_field_projection_scaled": 0.01641417779776037
+    },
+    {
+      "interface": "center_right",
+      "mode": 5,
+      "missing_weak_projection_scaled": -0.3013870709008101,
+      "B5_field_projection_scaled": 0.23797865059397993
+    },
+    {
+      "interface": "left_inner",
+      "mode": 3,
+      "missing_weak_projection_scaled": -0.2348195823973115,
+      "B5_field_projection_scaled": -0.30003324010183385
+    },
+    {
+      "interface": "right_inner",
+      "mode": 4,
+      "missing_weak_projection_scaled": 0.19625206658345648,
+      "B5_field_projection_scaled": -0.09624072017558058
+    }
+  ],
+  "energy_output_not_used_to_fit_or_explain_gap": true,
+  "limitations": [
+    "One-point versus Abaqus gap includes constitutive/kinematic/discretization/stabilization differences; not identified as hourglass",
+    "Force-gap dot displacement is work diagnostic, not Abaqus artificial energy",
+    "No C3D8R stabilization formula was inferred from outputs",
+    "No physics loss calibrated or deployed; B5/B9A7/65V unchanged"
+  ],
+  "weak_form_physics_loss_ready": false,
+  "live_Broyden_approved": false
+}

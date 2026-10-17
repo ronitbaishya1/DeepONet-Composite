@@ -1,0 +1,97 @@
+{
+  "step": "65AM-B9A10-G",
+  "hypothesis": "Abaqus C3D8 modified mean-dilatation (B-bar) operation",
+  "saved_cases": 21,
+  "strain_fields": {
+    "NLGEOM=NO": "E",
+    "NLGEOM=YES": "LE"
+  },
+  "linear_comparisons": {
+    "Z00": {
+      "job": "B9A10F_F_Z00_LIN",
+      "angle": "Z00",
+      "deformation": "LIN",
+      "strain_field": "E",
+      "element": "C3D8",
+      "RF_pct_standard": 7.447716022439524,
+      "RF_pct_Bbar": 3.3081180987275034e-06,
+      "RF_norm_N": 47.7913755020393,
+      "LE_gradU_eng_RMS_pct": 39.0516243308238,
+      "LE_gradU_tensor_RMS_pct": 51.124931144058166,
+      "S_from_Abaqus_LE_RMS_pct": 4.289898666133576e-06,
+      "S_from_Abaqus_LE_double_shear_RMS_pct": 12.221898327105317,
+      "S_from_gradU_nominal_RMS_pct": 69.80402893726533,
+      "max_Q_S_LE_difference": 0.0,
+      "max_Q_S_nominal_difference": 0.0,
+      "max_IP_geometry_gap_mm": 1.2660808780146484e-08
+    },
+    "P17": {
+      "job": "B9A10F_F_P17_LIN",
+      "angle": "P17",
+      "deformation": "LIN",
+      "strain_field": "E",
+      "element": "C3D8",
+      "RF_pct_standard": 5.618317834237389,
+      "RF_pct_Bbar": 8.888022322978412e-06,
+      "RF_norm_N": 46.04712691519087,
+      "LE_gradU_eng_RMS_pct": 39.56609358268871,
+      "LE_gradU_tensor_RMS_pct": 52.345070133607386,
+      "S_from_Abaqus_LE_RMS_pct": 2.250031169990735e-06,
+      "S_from_Abaqus_LE_double_shear_RMS_pct": 12.304110333733671,
+      "S_from_gradU_nominal_RMS_pct": 62.10935717486347,
+      "max_Q_S_LE_difference": 0.0,
+      "max_Q_S_nominal_difference": 5.099402627487733e-08,
+      "max_IP_geometry_gap_mm": 1.2660808780146484e-08
+    },
+    "M17": {
+      "job": "B9A10F_F_M17_LIN",
+      "angle": "M17",
+      "deformation": "LIN",
+      "strain_field": "E",
+      "element": "C3D8",
+      "RF_pct_standard": 10.047274284316975,
+      "RF_pct_Bbar": 8.347429775559724e-06,
+      "RF_norm_N": 41.98893060634442,
+      "LE_gradU_eng_RMS_pct": 39.13752888368432,
+      "LE_gradU_tensor_RMS_pct": 52.967072156085685,
+      "S_from_Abaqus_LE_RMS_pct": 1.7858980210068064e-06,
+      "S_from_Abaqus_LE_double_shear_RMS_pct": 20.218208485446517,
+      "S_from_gradU_nominal_RMS_pct": 94.71745832248072,
+      "max_Q_S_LE_difference": 0.0,
+      "max_Q_S_nominal_difference": 5.099402627487733e-08,
+      "max_IP_geometry_gap_mm": 1.2660808780146484e-08
+    },
+    "ISO": {
+      "job": "B9A10F_F_ISO_LIN",
+      "angle": "ISO",
+      "deformation": "LIN",
+      "strain_field": "E",
+      "element": "C3D8",
+      "RF_pct_standard": 4.016463816059603e-06,
+      "RF_pct_Bbar": 3.998700019009631e-06,
+      "RF_norm_N": 32.579495840284935,
+      "LE_gradU_eng_RMS_pct": 39.0516243308238,
+      "LE_gradU_tensor_RMS_pct": 51.124931144058166,
+      "S_from_Abaqus_LE_RMS_pct": 4.710759023687158e-06,
+      "S_from_Abaqus_LE_double_shear_RMS_pct": 26.404340859205245,
+      "S_from_gradU_nominal_RMS_pct": 79.5104623630921,
+      "max_Q_S_LE_difference": 0.0,
+      "max_Q_S_nominal_difference": 0.0,
+      "max_IP_geometry_gap_mm": 1.2660808780146484e-08
+    }
+  },
+  "baseline_checks": {
+    "B9A10F_zero_angle_linear_original_error_7p4477pp": true,
+    "B9A10F_plus17_linear_original_error_5p6183pp": true,
+    "B9A10F_iso_linear_original_error_0pct": true
+  },
+  "all_baselines_reproduced": true,
+  "no_training_no_new_Abaqus_jobs": true,
+  "physics_loss_ready": false,
+  "limits": [
+    "Bbar correction tested only for C3D8 NLGEOM=NO, not for nonlinear C3D8R model",
+    "Abaqus E for linear and LE for nonlinear are output fields, not direct access to element internal force algorithm",
+    "Successful Bbar comparison is evidence, not a proof of exact Abaqus implementation",
+    "No model or 65V solver changed"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "step": "65AM-B9A10-C",
+  "case_count": 8,
+  "free_case_count": 4,
+  "replay_case_count": 4,
+  "average_R_REPLAY_force_gap_pct": 3.8237123867887797,
+  "average_F_REPLAY_force_gap_pct": 49.04777627057369,
+  "R_replay_vs_prior_B9A6": {
+    "inner_left_R_REPLAY_vs_B9A6_pct": 0.0,
+    "inner_right_R_REPLAY_vs_B9A6_pct": 0.0
+  },
+  "ip_geometry_checks": {
+    "B9A10C_L_R_FREE": {
+      "max_IP_coordinate_error_mm": 4.640784045868534e-07,
+      "min_detF": 0.9961458975196366,
+      "max_detF": 1.002608998238224,
+      "net_internal_force_N": [
+        -6.785683126508957e-13,
+        5.861977570020827e-14,
+        -3.9968028886505635e-15
+      ]
+    },
+    "B9A10C_L_R_REPLAY": {
+      "max_IP_coordinate_error_mm": 4.640784045868534e-07,
+      "min_detF": 0.9961458975196366,
+      "max_detF": 1.002608998238224,
+      "net_internal_force_N": [
+        1.9042545318370685e-12,
+        -1.1479706074624119e-12,
+        3.774758283725532e-15
+      ]
+    },
+    "B9A10C_L_F_FREE": {
+      "max_IP_coordinate_error_mm": 4.779842522831109e-07,
+      "min_detF": 0.9803091906590142,
+      "max_detF": 1.0177225492186406,
+      "net_internal_force_N": [
+        -4.369837824924616e-13,
+        1.113775738303957e-12,
+        -2.6645352591003757e-15
+      ]
+    },
+    "B9A10C_L_F_REPLAY": {
+      "max_IP_coordinate_error_mm": 4.985711864072101e-07,
+      "min_detF": 0.9798412905523247,
+      "max_detF": 1.0183648526604379,
+      "net_internal_force_N": [
+        4.085620730620576e-13,
+        1.1173284519827575e-12,
+        1.63202784619898e-14
+      ]
+    },
+    "B9A10C_R_R_FREE": {
+      "max_IP_coordinate_error_mm": 4.074288833497682e-07,
+      "min_detF": 0.996132585899707,
+      "max_detF": 1.002625501650643,
+      "net_internal_force_N": [
+        4.085620730620576e-14,
+        1.3506973317589654e-12,
+        2.525757381022231e-15
+      ]
+    },
+    "B9A10C_R_R_REPLAY": {
+      "max_IP_coordinate_error_mm": 4.074288833497682e-07,
+      "min_detF": 0.996132585899707,
+      "max_detF": 1.002625501650643,
+      "net_internal_force_N": [
+        -1.0009770790020411e-12,
+        8.754108549169359e-13,
+        5.190292640122607e-15
+      ]
+    },
+    "B9A10C_R_F_FREE": {
+      "max_IP_coordinate_error_mm": 5.051258685097438e-07,
+      "min_detF": 0.9802789627366162,
+      "max_detF": 1.017744239732714,
+      "net_internal_force_N": [
+        5.764277943853813e-13,
+        -1.4797052472204086e-12,
+        -1.9984014443252818e-14
+      ]
+    },
+    "B9A10C_R_F_REPLAY": {
+      "max_IP_coordinate_error_mm": 4.768806881645526e-07,
+      "min_detF": 0.9798075843700353,
+      "max_detF": 1.0183869976399078,
+      "net_internal_force_N": [
+        5.968558980384842e-13,
+        1.6364687382974807e-12,
+        -6.716849298982197e-15
+      ]
+    }
+  },
+  "test": "C3D8 and C3D8R have identical reference mesh, material, and applied BC; integration/formulation differs",
+  "conclusions_forbidden": [
+    "ALLAE/ALLIE does not directly measure missing nodal hourglass force",
+    "C3D8 full-integration is not necessarily a better physical reference without mesh-convergence checks",
+    "REPLAY constrains every node and is NOT a free equilibrium solution"
+  ],
+  "physics_loss_ready": false,
+  "live_Broyden_approved": false,
+  "old_models_untouched": true
+}

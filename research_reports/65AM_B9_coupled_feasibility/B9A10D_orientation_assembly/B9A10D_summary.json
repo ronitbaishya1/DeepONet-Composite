@@ -1,0 +1,107 @@
+{
+  "step": "65AM-B9A10-D",
+  "purpose": "Audit material-local stress rotation and force assembly",
+  "source_rotation_convention": "Q=global_to_local; global_sigma=Q.T@local_sigma@Q",
+  "cases": {
+    "B9A10C_L_R_FREE": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9961458975196366,
+      "max_detF": 1.002608998238224,
+      "max_IP_geometry_error_mm": 4.640784045868534e-07
+    },
+    "B9A10C_L_R_REPLAY": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9961458975196366,
+      "max_detF": 1.002608998238224,
+      "max_IP_geometry_error_mm": 4.640784045868534e-07
+    },
+    "B9A10C_L_F_FREE": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9803091906590142,
+      "max_detF": 1.0177225492186406,
+      "max_IP_geometry_error_mm": 4.779842522831109e-07
+    },
+    "B9A10C_L_F_REPLAY": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9798412905523247,
+      "max_detF": 1.0183648526604379,
+      "max_IP_geometry_error_mm": 4.985711864072101e-07
+    },
+    "B9A10C_R_R_FREE": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.996132585899707,
+      "max_detF": 1.002625501650643,
+      "max_IP_geometry_error_mm": 4.074288833497682e-07
+    },
+    "B9A10C_R_R_REPLAY": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.996132585899707,
+      "max_detF": 1.002625501650643,
+      "max_IP_geometry_error_mm": 4.074288833497682e-07
+    },
+    "B9A10C_R_F_FREE": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9802789627366162,
+      "max_detF": 1.017744239732714,
+      "max_IP_geometry_error_mm": 5.051258685097438e-07
+    },
+    "B9A10C_R_F_REPLAY": {
+      "rotation_available": true,
+      "rotation_fraction": 1.0,
+      "min_detF": 0.9798075843700353,
+      "max_detF": 1.0183869976399078,
+      "max_IP_geometry_error_mm": 4.768806881645526e-07
+    }
+  },
+  "comparisons": {
+    "inner_left/C3D8R/FREE": {
+      "old_raw_assumption": 3.821258805699791,
+      "rotated_local_to_global": 1.1770800278693914
+    },
+    "inner_left/C3D8R/REPLAY": {
+      "old_raw_assumption": 3.82126144685492,
+      "rotated_local_to_global": 1.1770788954991
+    },
+    "inner_left/C3D8/FREE": {
+      "old_raw_assumption": 10.024929183524605,
+      "rotated_local_to_global": 10.373631282124938
+    },
+    "inner_left/C3D8/REPLAY": {
+      "old_raw_assumption": 38.98959548418416,
+      "rotated_local_to_global": 42.141423807863355
+    },
+    "inner_right/C3D8R/FREE": {
+      "old_raw_assumption": 3.82616493574548,
+      "rotated_local_to_global": 1.173082591821882
+    },
+    "inner_right/C3D8R/REPLAY": {
+      "old_raw_assumption": 3.826167688448642,
+      "rotated_local_to_global": 1.1730814646256718
+    },
+    "inner_right/C3D8/FREE": {
+      "old_raw_assumption": 10.008592790329718,
+      "rotated_local_to_global": 10.348758211177831
+    },
+    "inner_right/C3D8/REPLAY": {
+      "old_raw_assumption": 39.03615775971525,
+      "rotated_local_to_global": 42.16446338000348
+    }
+  },
+  "orientation_missing_is_not_identity": true,
+  "old_outputs_modified": false,
+  "B5_and_65V_unchanged": true,
+  "physics_loss_ready": false,
+  "live_Broyden_approved": false,
+  "warnings": [
+    "C3D8 full-displacement replay is not an equilibrated C3D8 solution",
+    "Abaqus C3D8R hourglass stabilization is not reconstructed by this stress integral",
+    "Small free-node forces of corrected C3D8 FREE cases are needed before use as a loss"
+  ]
+}

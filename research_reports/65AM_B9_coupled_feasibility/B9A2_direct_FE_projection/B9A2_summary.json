@@ -1,0 +1,20 @@
+{
+  "step": "65AM-B9A2",
+  "reference": "Actual ABAQUS RF from saved 65V FE patch ODBs",
+  "saved_65V_RMS": 0.019522576349400432,
+  "measured_FE_plus_original_NO_RMS": 0.01952257634940044,
+  "previous_inferred_vs_measured_FE_scaled_RMS": 0.0,
+  "candidate_B5_plus_measured_FE_RMS_ESTIMATE": 3.505450705605196,
+  "B5_sign_reversed_RMS_DIAGNOSTIC": 26.189533877039086,
+  "FE_reaction_projection_reproduces_65V": true,
+  "candidate_substitution_meets_002": false,
+  "approved_for_live_Broyden": false,
+  "interpretation": "Projection of real FE patch RF reproduces the prior verified 65V residual",
+  "limitations": [
+    "Candidate RMS is measured FE at old q plus B5 NO at old q: not a re-equilibrated or converged B5 hybrid solution",
+    "No sign flip or numerical rescaling automatically applied",
+    "Face-traction approximation may differ from nodal reactions (hourglass/contact/finite-element effects)",
+    "A true B5 NO-side FEM benchmark at these prescribed 65V interface displacements is still needed if force discrepancy remains"
+  ],
+  "next_step": "B9A3: controlled B5 NO-side patch reference and shared force convention audit"
+}
