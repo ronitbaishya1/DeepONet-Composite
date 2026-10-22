@@ -1,0 +1,64 @@
+{
+  "stage": "B9A11S-evaluate",
+  "sensor_sites": 20,
+  "noise_sigma_U_mm": 0.0002,
+  "noisy_repetitions": 3,
+  "tune_cases_evaluated": 12,
+  "rows": 192,
+  "median_inverse_error_pct": {
+    "('FEM_noisy', 'baseline', 'B5_plus_FIT_correction')": {
+      "E1": 4.593498819044366,
+      "E2": 4.584122771647188,
+      "G12": 2.8275058386442926
+    },
+    "('FEM_noisy', 'baseline', 'frozen_B5')": {
+      "E1": 3.710515907895,
+      "E2": 5.304042863549197,
+      "G12": 3.7371965491287407
+    },
+    "('FEM_noisy', 'optimized', 'B5_plus_FIT_correction')": {
+      "E1": 3.4421244015156844,
+      "E2": 2.8725188838880302,
+      "G12": 3.027205565896314
+    },
+    "('FEM_noisy', 'optimized', 'frozen_B5')": {
+      "E1": 2.955050070181091,
+      "E2": 3.6332766577310975,
+      "G12": 2.826046081363166
+    },
+    "('FEM_zero_noise', 'baseline', 'B5_plus_FIT_correction')": {
+      "E1": 1.152769398045431,
+      "E2": 1.1666519395647004,
+      "G12": 1.0589656669547969
+    },
+    "('FEM_zero_noise', 'baseline', 'frozen_B5')": {
+      "E1": 1.7946727337572477,
+      "E2": 1.9835004749875638,
+      "G12": 1.9649786783991838
+    },
+    "('FEM_zero_noise', 'optimized', 'B5_plus_FIT_correction')": {
+      "E1": 1.3064535002435278,
+      "E2": 1.4576690168819992,
+      "G12": 1.1574104505605647
+    },
+    "('FEM_zero_noise', 'optimized', 'frozen_B5')": {
+      "E1": 2.0318346343832223,
+      "E2": 1.6702072879213525,
+      "G12": 1.4373932878303746
+    }
+  },
+  "median_forward_RMSE_mm": {
+    "('baseline', 'B5_plus_FIT_correction')": 9.487820500337136e-06,
+    "('baseline', 'frozen_B5')": 1.4561187011908141e-05,
+    "('optimized', 'B5_plus_FIT_correction')": 1.5382778059201854e-05,
+    "('optimized', 'frozen_B5')": 2.2324924257499326e-05
+  },
+  "corrected_model_is_fit_only_FEM_residual_regression": true,
+  "original_B5_unchanged": true,
+  "known_FEM_q": true,
+  "evaluation_is_INTERNAL_original_64J_TRAIN_tune": true,
+  "not_independent_validation": true,
+  "not_a_full_coupled_FE_NO": true,
+  "no_exact_FEM_sensitivity_jacobians": true,
+  "next": "If fit-only correction improves independent internal tune forward RMSE and inverse errors, test NEW independent Abaqus subdomains with prescribed matched q; later fix coupled solver."
+}

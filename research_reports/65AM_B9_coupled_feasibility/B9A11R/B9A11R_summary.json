@@ -1,0 +1,60 @@
+{
+  "stage": "B9A11R-evaluate",
+  "scope": "Known-interface B5 conditional inverse",
+  "n_results": 96,
+  "tune_cases_per_region": 6,
+  "noise_reps": 2,
+  "sensor_count_per_region": 20,
+  "median_inverse_errors": {
+    "B5_to_B5_zero_noise": {
+      "baseline": {
+        "E1": 4.676517171785453e-05,
+        "E2": 0.0001494319689553069,
+        "G12": 7.053568829016292e-05
+      },
+      "optimized": {
+        "E1": 3.4294210370085156e-05,
+        "E2": 2.4827362811145454e-05,
+        "G12": 2.897526796221377e-05
+      }
+    },
+    "FEM_to_B5_zero_noise": {
+      "baseline": {
+        "E1": 1.7946727337572477,
+        "E2": 1.9835004749875638,
+        "G12": 1.9649786783991838
+      },
+      "optimized": {
+        "E1": 2.0318346343832223,
+        "E2": 1.6702072879213525,
+        "G12": 1.4373932878303746
+      }
+    },
+    "FEM_to_B5_noisy": {
+      "baseline": {
+        "E1": 5.092574471541135,
+        "E2": 5.63117587801484,
+        "G12": 4.601564060543198
+      },
+      "optimized": {
+        "E1": 4.931921696913177,
+        "E2": 4.540275962451929,
+        "G12": 4.537835594763855
+      }
+    }
+  },
+  "boundary_hit_counts": {
+    "('B5_to_B5_zero_noise', 'baseline')": 1,
+    "('B5_to_B5_zero_noise', 'optimized')": 1,
+    "('FEM_to_B5_noisy', 'baseline')": 21,
+    "('FEM_to_B5_noisy', 'optimized')": 19,
+    "('FEM_to_B5_zero_noise', 'baseline')": 6,
+    "('FEM_to_B5_zero_noise', 'optimized')": 7
+  },
+  "sensor_design_uses_fit_only": true,
+  "evaluation_uses_internal_tune": true,
+  "not_external_validation": true,
+  "FEM_interface_q_is_known": true,
+  "not_full_coupled_digital_twin": true,
+  "B5_checkpoints_unchanged": true
+}

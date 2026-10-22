@@ -1,0 +1,37 @@
+{
+  "stage": "B9A11Q-A",
+  "scope": "B5 known-PCA-interface, internal original 64J TRAIN tune",
+  "fit_cases_total": 48,
+  "tune_cases_total": 12,
+  "noise_std_mm": 0.0002,
+  "median_absolute_pct_by_mode": {
+    "B5_to_B5_zero_noise": {
+      "E1_abs_rel_pct": 4.676517171785453e-05,
+      "E2_abs_rel_pct": 0.0001494319689553069,
+      "G12_abs_rel_pct": 7.053568829016292e-05
+    },
+    "FEM_to_B5_noisy": {
+      "E1_abs_rel_pct": 2.816450486123193,
+      "E2_abs_rel_pct": 5.910824430600305,
+      "G12_abs_rel_pct": 4.496212519436257
+    },
+    "FEM_to_B5_zero_noise": {
+      "E1_abs_rel_pct": 1.7946727337572477,
+      "E2_abs_rel_pct": 1.9835004749875638,
+      "G12_abs_rel_pct": 1.9649786783991838
+    }
+  },
+  "median_b5_fem_rmse_mm": 1.4561187011908141e-05,
+  "median_jacobian_condition": 13.598509803989506,
+  "minimum_singular_value_over_cases": 0.1246826999234005,
+  "boundary_hits_by_mode": {
+    "B5_to_B5_zero_noise": 1,
+    "FEM_to_B5_noisy": 29,
+    "FEM_to_B5_zero_noise": 7
+  },
+  "not_an_independent_validation": true,
+  "not_full_beam_coupling": true,
+  "q_from_FEM_tuning_cases": true,
+  "checkpoint_and_65V_unchanged": true,
+  "interpretation": "B5->B5 zero-noise tests optimizer / conditional local observability; FEM->B5 tests surrogate mismatch and inverse bias."
+}

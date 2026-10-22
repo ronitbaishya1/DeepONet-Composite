@@ -1,0 +1,27 @@
+{
+  "stage": "B9A11U-conditional_inverse",
+  "fixed_FEM_interface_q": true,
+  "B9A11T_was_previously_inspected_not_blinded_external_validation": true,
+  "compared_models_with_identical_observations": true,
+  "inverse_jacobian": "explicit central/one-sided FD in normalized z",
+  "fd_step_normalized": 0.01,
+  "previous_default_scipy_jacobian_invalid": true,
+  "median_noisy_errors_pct": {
+    "original_B5": {
+      "E1_abs_rel_pct": 4.413871818714983,
+      "E2_abs_rel_pct": 6.2724577136698185,
+      "G12_abs_rel_pct": 3.884871609296428
+    },
+    "trained_B5": {
+      "E1_abs_rel_pct": 5.28040348667888,
+      "E2_abs_rel_pct": 7.936745553365661,
+      "G12_abs_rel_pct": 4.991439552130403
+    }
+  },
+  "boundary_hit_counts": {
+    "('original_B5', 'noisy')": 19,
+    "('original_B5', 'zero_noise')": 1,
+    "('trained_B5', 'noisy')": 20,
+    "('trained_B5', 'zero_noise')": 1
+  }
+}

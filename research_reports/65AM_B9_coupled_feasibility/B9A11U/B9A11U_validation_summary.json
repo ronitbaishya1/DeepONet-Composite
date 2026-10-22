@@ -1,0 +1,33 @@
+{
+  "stage": "B9A11U-compare",
+  "preserved_B9A11T_for_holdout": true,
+  "full_beam_online_re_equilibration": false,
+  "source_data_source": "old fixed-q B9A11T",
+  "model_training_uses_only_new_FIT_sensitivity_perturbations": true,
+  "grouped": [
+    {
+      "layout": "baseline",
+      "model": "frozen_B5",
+      "jacobian_rel_error_pct": 33.921261064012334,
+      "whole_jacobian_error_pct": 29.65049971476056
+    },
+    {
+      "layout": "baseline",
+      "model": "sensitivity_B5",
+      "jacobian_rel_error_pct": 16.71705294164629,
+      "whole_jacobian_error_pct": 13.7680033436709
+    },
+    {
+      "layout": "optimized",
+      "model": "frozen_B5",
+      "jacobian_rel_error_pct": 31.66436696989923,
+      "whole_jacobian_error_pct": 28.826331145769533
+    },
+    {
+      "layout": "optimized",
+      "model": "sensitivity_B5",
+      "jacobian_rel_error_pct": 15.822294921447105,
+      "whole_jacobian_error_pct": 13.242922906626172
+    }
+  ]
+}
