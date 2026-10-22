@@ -1,0 +1,17 @@
+{
+  "stage": "B9A11U-FIT-only-plan",
+  "plan_sha256": "6c00b8247adadb1047885e4f3c002c118775f4af82662fcb2713b494532fc3b9",
+  "anchor_sha256": "4adff1c0ff5cf390712cd1e454d405ab782f1e0c0860c1850156a880c10ee0d7",
+  "fraction": 0.03,
+  "train_centers_per_region": 3,
+  "dev_centers_per_region": 1,
+  "FEM_jobs": 48,
+  "original_B5_checkpoint_hashes": {
+    "inner_left": "5f18730e96ced967b5f4357e32771b31730ae7860bf3b1322e2abc438b89c790",
+    "inner_right": "116ce795640500c19ce5b32a54521ecc2c87d5d6bff54d282436c87dc08b45c5"
+  },
+  "FIT_only": true,
+  "original_12_TUNE_unused_for_gradient_pairs": true,
+  "B9A11T_reserved_as_unseen_FIXED_Q_65V_anchor": true,
+  "not_full_coupled": true
+}
