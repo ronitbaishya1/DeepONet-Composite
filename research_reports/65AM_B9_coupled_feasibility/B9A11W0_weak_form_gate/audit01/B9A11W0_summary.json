@@ -1,0 +1,64 @@
+{
+  "stage": "B9A11W0",
+  "scope": "Fixed prescribed q, 24 previously inspected B9A9 subdomain cases",
+  "paper_inspiration": "Weak-form equilibrium and test-time residual correction",
+  "force_law": "B9A10L approximate finite-deformation orthotropic + B9A10K fitted hourglass",
+  "fitted_hourglass_beta": 0.004381715594969032,
+  "FEM_reference_force_control_pass": true,
+  "force_law_approved_for_training": false,
+  "force_law_approved_for_coupled_inverse": false,
+  "physics_residual_does_not_prove_exact_Abaqus_equilibrium": true,
+  "interface_from_reference_FEM": true,
+  "new_abq_jobs": 0,
+  "max_reference_force_pct": 0.22476011949097782,
+  "max_reference_free_pct": 0.09404652696506634,
+  "original_B5_checkpoints_frozen": true,
+  "regions": {
+    "inner_left": {
+      "FEM": {
+        "mean_force_gap_pct": 0.22118720360468014,
+        "max_force_gap_pct": 0.22476011949097782,
+        "rms_free_force_gap_pct": 0.09362302119492738,
+        "mean_U_RMSE_mm": 0.0,
+        "PCA_force_error_RMS_65V_scale": 0.019453892584519662
+      },
+      "original_B5": {
+        "mean_force_gap_pct": 3.3238726464647566,
+        "max_force_gap_pct": 4.475653238214252,
+        "rms_free_force_gap_pct": 3.1839804555481837,
+        "mean_U_RMSE_mm": 2.702983349785258e-05,
+        "PCA_force_error_RMS_65V_scale": 0.29960378860439657
+      },
+      "trained_B5": {
+        "mean_force_gap_pct": 3.249211310619337,
+        "max_force_gap_pct": 4.428186979518372,
+        "rms_free_force_gap_pct": 3.1252335617302838,
+        "mean_U_RMSE_mm": 2.6233097636221673e-05,
+        "PCA_force_error_RMS_65V_scale": 0.2838321011418802
+      }
+    },
+    "inner_right": {
+      "FEM": {
+        "mean_force_gap_pct": 0.21936296656250986,
+        "max_force_gap_pct": 0.22228559484477253,
+        "rms_free_force_gap_pct": 0.0934203231857021,
+        "mean_U_RMSE_mm": 0.0,
+        "PCA_force_error_RMS_65V_scale": 0.02297419586493162
+      },
+      "original_B5": {
+        "mean_force_gap_pct": 2.3111221351695006,
+        "max_force_gap_pct": 3.8957787717845647,
+        "rms_free_force_gap_pct": 2.313158768114652,
+        "mean_U_RMSE_mm": 2.572507410465754e-05,
+        "PCA_force_error_RMS_65V_scale": 0.18726059163606484
+      },
+      "trained_B5": {
+        "mean_force_gap_pct": 2.3463187857834136,
+        "max_force_gap_pct": 3.952256186741126,
+        "rms_free_force_gap_pct": 2.329857885160118,
+        "mean_U_RMSE_mm": 2.6318561034344122e-05,
+        "PCA_force_error_RMS_65V_scale": 0.1945122320100329
+      }
+    }
+  }
+}

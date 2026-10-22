@@ -1,0 +1,60 @@
+{
+  "stage": "B9A11W1",
+  "status": "GEOMETRY ONLY; NOT YET READY FOR STRAIN INVERSION",
+  "data_source": "Original C3D8R B5 geometries; no new FEM/experimental strains",
+  "limitations": [
+    "Exterior faces do not establish roller-contact-free surfaces",
+    "Material axes/face tangent conventions still require Abaqus deck audit",
+    "Abaqus element-center strains are not experimental surface-gauge values",
+    "Gauge patch footprints/averaging and independent noise model not chosen",
+    "Do not count strain derived from the same noisy U as independent"
+  ],
+  "regions": {
+    "inner_left": {
+      "nodes": 1008,
+      "elements": 728,
+      "exterior_faces": 502,
+      "exterior_face_axis_counts": {
+        "x": 182,
+        "y": 208,
+        "z": 112
+      },
+      "candidate_faces_excluding_interface_endstrips": 240,
+      "xyz_bounds_mm": {
+        "min": [
+          -6.599999904632568,
+          0.0,
+          0.0
+        ],
+        "max": [
+          -1.7999999523162842,
+          4.0,
+          8.0
+        ]
+      }
+    },
+    "inner_right": {
+      "nodes": 1008,
+      "elements": 728,
+      "exterior_faces": 502,
+      "exterior_face_axis_counts": {
+        "x": 182,
+        "y": 208,
+        "z": 112
+      },
+      "candidate_faces_excluding_interface_endstrips": 240,
+      "xyz_bounds_mm": {
+        "min": [
+          1.7999999523162842,
+          0.0,
+          0.0
+        ],
+        "max": [
+          6.599999904632568,
+          4.0,
+          8.0
+        ]
+      }
+    }
+  }
+}

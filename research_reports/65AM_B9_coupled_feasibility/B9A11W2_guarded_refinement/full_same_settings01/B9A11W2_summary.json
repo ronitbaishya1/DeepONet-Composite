@@ -1,0 +1,67 @@
+{
+  "stage": "B9A11W2",
+  "scope": "Fixed-q diagnostic only",
+  "cases_per_region": 12,
+  "approximate_force_law": "B9A10L + fitted B9A10K hourglass",
+  "FEM_reference_gate_pass": true,
+  "FEM_reference_preserved_by_explicit_skip": true,
+  "B5_checkpoints_unchanged": true,
+  "not_approved_for_training_or_inverse_or_coupling": true,
+  "settings": {
+    "modes": 6,
+    "cap_rms_mm": 1e-05,
+    "fd_mm": 1e-06,
+    "ridge": 0.0001,
+    "steps": 1
+  },
+  "regions": {
+    "inner_left": {
+      "original_B5": {
+        "before_free_residual_rms_pct": 3.1859599745699376,
+        "after_free_residual_rms_pct": 2.417719526841124,
+        "before_FEM_displacement_RMSE_mm": 2.702983349785258e-05,
+        "after_FEM_displacement_RMSE_mm": 2.5426366842046767e-05,
+        "before_interface_PCA_RMS": 0.29960378860439657,
+        "after_interface_PCA_RMS": 0.27020957256653866,
+        "n_improved_displacement": 10,
+        "n_improved_interface": 11,
+        "n_corrected": 12
+      },
+      "trained_B5": {
+        "before_free_residual_rms_pct": 3.126371229142306,
+        "after_free_residual_rms_pct": 2.3823085764029344,
+        "before_FEM_displacement_RMSE_mm": 2.6233097636221673e-05,
+        "after_FEM_displacement_RMSE_mm": 2.48511794182666e-05,
+        "before_interface_PCA_RMS": 0.28383210114188023,
+        "after_interface_PCA_RMS": 0.255952737844312,
+        "n_improved_displacement": 9,
+        "n_improved_interface": 11,
+        "n_corrected": 12
+      }
+    },
+    "inner_right": {
+      "original_B5": {
+        "before_free_residual_rms_pct": 2.3179623029340615,
+        "after_free_residual_rms_pct": 2.0016393498431175,
+        "before_FEM_displacement_RMSE_mm": 2.572507410465754e-05,
+        "after_FEM_displacement_RMSE_mm": 2.5632252912043187e-05,
+        "before_interface_PCA_RMS": 0.18726059163606484,
+        "after_interface_PCA_RMS": 0.18403938704989634,
+        "n_improved_displacement": 5,
+        "n_improved_interface": 9,
+        "n_corrected": 12
+      },
+      "trained_B5": {
+        "before_free_residual_rms_pct": 2.332805045068164,
+        "after_free_residual_rms_pct": 2.008088801876426,
+        "before_FEM_displacement_RMSE_mm": 2.6318561034344122e-05,
+        "after_FEM_displacement_RMSE_mm": 2.6124280234438572e-05,
+        "before_interface_PCA_RMS": 0.1945122320100329,
+        "after_interface_PCA_RMS": 0.18919745039207958,
+        "n_improved_displacement": 5,
+        "n_improved_interface": 9,
+        "n_corrected": 12
+      }
+    }
+  }
+}
